@@ -1,0 +1,27 @@
+.search-results {
+    display: flex;
+    padding: var(--space-md);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+.search-result {
+    padding: var(--space-md);
+    gap: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.explore-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explore-btn {
+    display: flex;
+    gap: var(--space-sm);
+    width: fit-content;
+    font-size: 0.75rem;
+    align-items: center;
+    padding: var(--space-sm);
+}

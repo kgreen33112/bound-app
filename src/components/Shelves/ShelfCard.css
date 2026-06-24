@@ -1,0 +1,28 @@
+.shelf-card {
+    display: flex;
+    gap: var(--space-md);
+    border: 1px solid rgba(69, 100, 129, 0.08);
+}
+
+.shelf-title {
+    border-bottom: 4px solid var(--secondary-blue);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.shelf-card-info {
+    border: 2px solid red;
+    display: block;
+    position: relative; 
+    z-index: 999;
+    color: red;
+    background: yellow;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.book-stack {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,19 @@
+.featured-list-card {
+    display: flex;
+    gap: var(--space-sm);
+    border: 1px solid rgba(69, 100, 129, 0.08);
+    height: 250px;
+}
+
+.featured-list-title {
+    border-bottom: 4px solid var(--secondary-blue);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.book-stack {
+    display: flex;
+    flex-direction: row;
+    
+}

@@ -1,0 +1,23 @@
+.genre-page-title {
+    text-transform: capitalize;
+    padding: var(--space-sm);
+}
+
+.genre-page-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--space-md);
+}
+
+.genre-book-cover {
+    width: 4rem;
+    height: 6rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.genre-page-info {
+    display: flex;
+    flex-direction: column;
+}

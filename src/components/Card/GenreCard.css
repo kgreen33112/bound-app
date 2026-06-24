@@ -1,0 +1,15 @@
+.genre-card {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--secondary-blue);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    gap: var(--space-sm);
+    padding-bottom: 0;
+    margin: var(--space-sm) 0;
+}
+
+.genre-btn {
+    background-color: var(--clr-background);
+    font-size: 0.85rem;
+}

@@ -1,0 +1,10 @@
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-sm);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}

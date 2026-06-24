@@ -1,0 +1,9 @@
+/* Use for app layout, page-level styling, shared component styling*/
+/* Mobile-First Design */
+
+.app {
+    min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+}

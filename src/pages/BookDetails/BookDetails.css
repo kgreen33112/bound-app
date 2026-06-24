@@ -1,0 +1,71 @@
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.status-selector {
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    margin: var(--space-md);
+    border: 2px solid var(--primary-blue);
+    color: var(--text);
+    box-shadow: var(--shadow-md);
+}
+
+.book-genres {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.genre-pill {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: var(--secondary-blue);
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.summary-card {
+    padding: var(--space-md); 
+    gap: var(--space-md);
+}
+
+.summary-card p {
+    font-size: 0.75rem;
+}
+
+.single-review {
+    display: flex;
+    padding: var(--space-md);
+    gap: var(--space-md);
+}
+
+.review-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-blue);
+    width: 2.5rem;
+    height: 2.5rem; 
+    padding: var(--space-md);
+    border-radius: 50%;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: var(--shadow-sm);
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-sm);
+    font-size: 0.75rem;
+    gap: var(--space-sm);
+}

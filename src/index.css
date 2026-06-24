@@ -1,0 +1,84 @@
+/*Global CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&family=The+Girl+Next+Door&display=swap');
+/*Use for CSS reset, global variables, typography, globaly utility classes, and base element styles (body, button, img, etc.)
+
+/*Reset*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture, 
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+button, 
+input,
+textarea, 
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+ul, 
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Variables*/
+:root {
+    --clr-background: #f8f9fb;
+    --dark-bg: #2B494A;
+    --primary-teal: #98C2C4;
+    --secondary-teal: #D2E4E5;
+    --primary-blue: #456481;
+    --secondary-blue: #B3C5D6;
+    --text: #293B4C;
+    --text-on-dark: #f8f9fb;
+    --space-xs: .25rem;
+    --space-sm: .5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.25rem;
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --transition: 0.2s ease;
+    --text-lg: 
+}
+
+/*Base Styles*/
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Solway', 'Inter', system-ui, sans-serif;
+    background: var(--clr-background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+#root {
+    min-height: 100vh;
+}

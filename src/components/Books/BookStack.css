@@ -1,0 +1,32 @@
+.book-stack {
+    position: relative;
+    width: 5rem;
+    height: 7rem;
+}
+
+.book-stack-cover {
+    position: absolute;
+    width: 4rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.book-stack-cover-0 {
+    top: 1.5rem;
+    left: 2rem;
+    z-index: 3;
+}
+
+.book-stack-cover-1 {
+    top: 0.75rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+.book-stack-cover-2 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

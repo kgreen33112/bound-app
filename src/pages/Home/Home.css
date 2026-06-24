@@ -1,0 +1,47 @@
+
+/*Currently Reading*/
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: var(--space-sm);
+}
+
+.lg-book-cover {
+    width: 12rem;
+    height: auto;
+}
+
+.book-info {
+    text-align: center;
+    padding: var(--space-sm);
+}
+
+/*Progress*/
+
+.progress-btn-container {
+    display: flex;
+    height: fit-content;
+    align-self: center;
+}
+
+/*Reading Challenge*/
+.reading-challenge-card p {
+    font-size: 0.75rem;
+    padding: var(--space-sm);
+}
+
+.challenge-title {
+    font-size: 1rem;
+    text-align: center;
+    padding: var(--space-sm);
+}
+
+/*Recommendations*/
+.book-row-container {
+    display: block;
+}
+
+.see-more-btn-container {
+    display: flex;
+    justify-content: center;
+}

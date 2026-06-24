@@ -1,0 +1,43 @@
+/*Featured List*/
+.featured-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-list-card {
+    padding: var(--space-sm);
+    gap: var(--space-md);
+    border: 0.25rem solid var(--secondary-blue);
+}
+
+.featured-list-text {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: var(--space-md);
+}
+
+.featured-list-card .book-stack-cover-0 {
+    top: 0;
+    left: 6rem;
+    width: 5rem;
+    height: 8rem;
+}
+
+.featured-list-card .book-stack-cover-1 {
+    top: 0;
+    left: 0.5rem;
+    width: 5rem;
+    height: 8rem;
+}
+
+.featured-list-card .book-stack-cover-2 {
+    top: 0;
+    left: -5rem;
+    width: 5rem;
+    height: 8rem;
+}
+
+.shelf-card-info {
+    display: none;
+}
+

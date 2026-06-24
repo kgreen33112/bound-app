@@ -1,0 +1,31 @@
+.footer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.footer-link.active {
+    color: var(--primary-blue);
+}
+
+.footer-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--primary-blue);
+    margin-top: 1rem;
+    transform: translateY(-2px);
+}

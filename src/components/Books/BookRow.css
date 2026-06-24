@@ -1,0 +1,17 @@
+.recommendation-text {
+    font-size: 0.75rem;
+    margin-bottom: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.book-row-list {
+    display: flex;
+    padding: var(--space-md);
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.book-row img {
+    width: 5rem;
+    height: auto;
+}
