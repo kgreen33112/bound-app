@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './BookDetails.css';
 import StarRating from "../../components/StarRating/StarRating";
+import fallbackCover2 from '../../assets/images/fallbackCover2.png';
 
 function BookDetails({ books, updateBookStatus }) {
     const { bookId } = useParams();
@@ -20,6 +21,9 @@ function BookDetails({ books, updateBookStatus }) {
                     className="lg-book-cover" 
                     src={`https://covers.openlibrary.org/b/id/${book.coverId}-L.jpg`}
                     alt={book.title}
+                    onError={(e) => {
+                        e.currentTarget.src = fallbackCover2;
+                    }}
                 />
                 <div className="book-info">
                     <h3>{book.title}</h3>

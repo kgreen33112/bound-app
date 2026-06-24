@@ -1,6 +1,6 @@
 
 import './Home.css';
-import TheoOfGolden from '../../assets/images/TheoOfGolden.png';
+import TheoOfGolden from '../../assets/images/TheoOfGolden.png'
 import DonutChart from '../../components/Progress/DonutChart';
 import Button from '../../components/Button/Button';
 import ProgressBar from '../../components/Progress/ProgressBar';
@@ -36,6 +36,9 @@ function Home({ books, updateBookProgress }) {
                         className="lg-book-cover"
                         src={`https://covers.openlibrary.org/b/id/${currentRead.coverId}-L.jpg`}
                         alt={currentRead.title}
+                        onError={(e) => {
+                            e.currentTarget.src = TheoOfGolden;
+                        }}
                     />
                 </Link>
                     
