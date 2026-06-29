@@ -3844,4 +3844,652 @@ export const books = {
         ],
         series: "The Mortal Instruments (#2)",
     },
+    "book-thief": {
+        id: "book-thief",
+        title: "The Book Thief",
+        author: "Markus Zusak",
+        coverId: 8153054,
+        rating: 4,
+        totalPages: 592,
+        status: "none",
+        summary: "It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will be busier still. By her brother's graveside, Liesel's life is changed when she picks up a single object, partially hidden in the snow. It is The Gravedigger's Handbook, left behind there by accident, and it is her...",
+        genres: ["Historical Fiction", "Fiction", "Young Adult"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Kat",
+                avatar: "K",
+                review_rating: 4, 
+                text: "Just to clarify: Yes, I did cry. I've read a lot of positive and negative reviews for this book. I can see why people wouldn't like it - I really can. Perhaps because I took a lot...",
+            },
+            {
+                id: 2, 
+                name: "Shannon",
+                avatar: "S",
+                review_rating: 5,
+                text: "This is a book to treasure, a new classic. I absolutely loved it..."
+            },
+            {
+                id: 3, 
+                name: "Will",
+                avatar: "W",
+                review_rating: 5,
+                text: "The Book Thief was published as Young Adult novel. Don’t you believe it. This is a wonderful novel, appropriate for adults of young, middle and advanced years. My wife was shedding copious tears as she finished reading the book, and insisted that I read it immediately. How could I..."
+            },
+            {
+                id: 4,
+                name: "Maja",
+                avatar: "M",
+                review_rating: 5,
+                text: "A few days ago, when I was starting The Book Thief, my mother stopped by and saw the book on my coffee table. Having just read it herself (and knowing me better than anyone else in the world, I might add), she was determined to save me from myself. She did her very best to convince me not to read it. She described in detail the three day long headache..."
+            },
+            {
+                id: 5,
+                name: "Colleen",
+                avatar: "C",
+                review_rating: 5,
+                text: "I put off reading this book for the library book club. Here are my three reasons for doing so: 1) It's a Young Adult Book. I am an Adult. It can't be that good if it's written for young people. 2) It's about the Holocaust, and I think we've all heard enough about..."
+            },
+        ],
+        year_published: 2005,
+        literary_awards: [
+            "National Jewish Book Award for Children's and Young Adult Literature (2006)",
+            "Margaret A. Edwards Award (2014)"
+        ],
+        series: "",
+    },
+    "lion-witch-wardrobe": {
+        id: "lion-witch-wardrobe",
+        title: "The Lion, The Witch, and The Wardrobe",
+        author: "C.S. Lewis",
+        coverId: 8441376,
+        rating: 4,
+        totalPages: 180,
+        status: "none",
+        summary: "They open a door and enter a world NARNIA...the land beyond the wardrobe, the secret country known only to Peter, Susan, Edmund, and Lucy...the place where the adventure begins. Lucy is the first to find the secret of the wardrobe in the professor's mysterious old house. At first, no one believes her when she tells of her adventures in the land of Narnia. But soon Edmund and then...",
+        genres: ["Fantasy", "Classics", "Fiction"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Miranda",
+                avatar: "M",
+                review_rating: 5, 
+                text: "It's like C.S. Lewis was speaking to me. I never read these as a child but now that I'm in my mid-twenties, I'm feeling the urge to visit all those childhood classics I never read. And I'm so glad I did...",
+            },
+            {
+                id: 2, 
+                name: "Lisa",
+                avatar: "L",
+                review_rating: 4,
+                text: "Brothers and sisters, Edmund, Peter, Susan, and Lucy discover the world of Narnia by hiding in a wardrobe. However, all is not well in Narnia..."
+            },
+            {
+                id: 3, 
+                name: "Patrick",
+                avatar: "P",
+                review_rating: 5,
+                text: "This is the first book where I chronicled my thoughts as I read through it with my son. I don't know how easy it is for y'all to access the record of those here on Goodreads, but if you're looking for a detailed account of my thoughts on the book, you can look there...."
+            },
+            {
+                id: 4,
+                name: "Sean",
+                avatar: "S",
+                review_rating: 5,
+                text: "The real world is boring; it’s mundane, unimaginative and dry. So humans create fantasy as a means of escape. We watch movies or go to the theatre to see something more interesting than the standard realities of the everyday. We paint pictures and gaze up at the stars. We..."
+            },
+            {
+                id: 5,
+                name: "J.G.",
+                avatar: "J",
+                review_rating: 2,
+                text: "My greatest disappointment in 'The Screwtape Letters' was that Lewis was not able to demonstrate what made his good people good or his bad people bad. The closest he got to defining goodness was that you could tell the good people from the vague aura of light that surrounded..."
+            },
+        ],
+        year_published: 1950,
+        literary_awards: [
+            "Lewis Carroll Shelf Award (1962)",
+            "Retro Hugo Award Nominee for Best Novel (2001)"
+        ],
+        series: "The Chronicles of Narnia (#1)",
+    },
+    "fault-in-our-stars": {
+        id: "fault-in-our-stars",
+        title: "The Fault in Our Stars",
+        author: "John Green",
+        coverId: 7418786,
+        rating: 4,
+        totalPages: 313,
+        status: "none",
+        summary: "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten...",
+        genres: ["Young Adult", "Romance", "Fiction"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Sophia",
+                avatar: "S",
+                review_rating: 3, 
+                text: "EMOTIONAL BLACKMAIL. You will cry, because this is very sad...",
+            },
+            {
+                id: 2, 
+                name: "Richa",
+                avatar: "R",
+                review_rating: 5,
+                text: "I HATE this book. Absolutely hate it. Not just from the bottom of my heart (which would literally mean my ventricles, and so, no) but with my whole heart. I hate it, hate it, hate it...."
+            },
+            {
+                id: 3, 
+                name: "Madeline",
+                avatar: "M",
+                review_rating: 5,
+                text: "At age twenty-two, John Green worked as a student chaplain in a children's hospital..."
+            },
+            {
+                id: 4,
+                name: "Emily",
+                avatar: "E",
+                review_rating: 2,
+                text: "It seems silly that I have to say this, but I've seen many a negative review of this book met with backlash from John's nerdfighter fans, so I want to make one thing clear: I like John Green. You'll find plenty who..."
+            },
+            {
+                id: 5,
+                name: "Rhi",
+                avatar: "R",
+                review_rating: 2,
+                text: "I must be clear from the beginning. This is perhaps the most personal review I have written. My choice of stars was difficult for this. I am a self confessed John Green fan, I believe he is amongst the best of, not only YA, but fiction writers out there in general..."
+            },
+        ],
+        year_published: 2012,
+        literary_awards: [
+            "Georgia Peach Book Award (2013)",
+            "Odyssey Award (2013)",
+            "Goodreads Choice Award for Young Adult Fiction (2012)"
+        ],
+        series: "",
+    },
+    "diary-of-young-girl": {
+        id: "diary-of-young-girl",
+        title: "The Diary of a Young Girl",
+        author: "Anne Frank",
+        coverId: 13526331,
+        rating: 4,
+        totalPages: 283,
+        status: "none",
+        summary: "Discovered in the attic where she spent the final years of her life, Anne Frank’s Diary has become a timeless classic; a powerful reminder of the horrors of war and a moving testament to the resilience of the human spirit...",
+        genres: ["Classics", "Nonfiction", "History"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Nilesh",
+                avatar: "N",
+                review_rating: 5, 
+                text: "Why do we write reviews? You have a lot of reasons I guess. But for this review there is only one. I am writing this for my conscience. Ever since I have rated this book, I always end up asking myself that, have I rated it with something it deserved or was it just out of sympathy (some call it pity vote)?",
+            },
+            {
+                id: 2, 
+                name: "Brenda",
+                avatar: "B",
+                review_rating: 5,
+                text: "I confess to feeling slightly voyeuristic while reading this. It was constantly in the back of my mind that this was no ordinary novel, or even a true-to-life account. This was someone’s diary. Every page written in confidence, each word revealing the thoughts closest to the..."
+            },
+            {
+                id: 3, 
+                name: "Maureen",
+                avatar: "M",
+                review_rating: 4,
+                text: "If only Anne Frank's diary was the figment of someone's imagination. If it meant that this spirited, intelligent and articulate girl hadn't died along with so many others in Belsen concentration camp, and that the holocaust had never happened, that would be a wonderful thing, but it..."
+            },
+            {
+                id: 4,
+                name: "Varsha",
+                avatar: "V",
+                review_rating: 5,
+                text: "My intention of writing a review for this book is to tell all the negative reviewers to SHUT UP! I am all for everyone's right to express their opinion but I read a few of the '1 star' reviews and I was shocked to read what a few people had to say about this book. Before making an..."
+            },
+            {
+                id: 5,
+                name: "Federico",
+                avatar: "F",
+                review_rating: 4,
+                text: "Possibly the best personal diary ever. Nazi occupation of Netherlands, 1942. Hidden in the secret upper annex of an office building with several other jewish people, Annelies Marie..."
+            },
+        ],
+        year_published: 1947,
+        literary_awards: [
+            "Luisterboek Award Nominee (2008)",
+        ],
+        series: "",
+    },
+    "catcher-in-rye": {
+        id: "catcher-in-rye",
+        title: "The Catcher in the Rye",
+        author: "J.D. Salinger",
+        coverId: 9273490,
+        rating: 3,
+        totalPages: 277,
+        status: "none",
+        summary: "It's Christmas time and Holden Caulfield has just been expelled from yet another school. Fleeing the crooks at Pencey Prep, he pinballs around New York City seeking solace in fleeting encounters—shooting the bull with strangers in dive hotels, wandering alone round Central Park, getting beaten up by pimps and cut down by erstwhile girlfriends. The city is beautiful and...",
+        genres: ["Classics", "Fiction", "Young Adult"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Mark",
+                avatar: "M",
+                review_rating: 5, 
+                text: "today i am 15 years old. everything is all bullshit, as usual. i can't believe how fucked everything is around me. like i'm surrounded by zombies. i...",
+            },
+            {
+                id: 2, 
+                name: "Stephen",
+                avatar: "S",
+                review_rating: 5,
+                text: "5.0 stars. I LOVE IT when I go into a book with low expectations and it ends up knocking me on my ass. Admittedly, this is tougher to do with classics but it certainly happened in this case. I remember first reading this in school (like many of us) and not thinking it was anything special..."
+            },
+            {
+                id: 3, 
+                name: "Kathy",
+                avatar: "K",
+                review_rating: 2,
+                text: "I read the end of The Catcher in the Rye the other day and found myself wanting to take Holden Caulfield by the collar and shake him really, really hard and shout at him to grow up. I suppose I've understood for some time now that The Catcher in the Rye -- a favorite of mine when I..."
+            },
+            {
+                id: 4,
+                name: "Lisa",
+                avatar: "L",
+                review_rating: 4,
+                text: "Often touted as a coming-of-age book, I beg to differ. This book is about struggling with grief and loss..."
+            },
+            {
+                id: 5,
+                name: "Matt",
+                avatar: "M",
+                review_rating: 5,
+                text: "I was worried as hell about reading this book again. The last time I read it was about a thousand years ago when I was just a kid. I was lousy with angst just like good old Holden back then. I really was. Now that I’m a crummy old guy I figured that I wouldn’t like it anymore. That’s the one..."
+            },
+        ],
+        year_published: 1951,
+        literary_awards: [
+            "Teen Read Award Nominee for Best All-Time-Fave (2010)",
+            "National Book Award Finalist for Fiction (1952)"
+        ],
+        series: "",
+    },
+    "the-help": {
+        id: "the-help",
+        title: "The Help",
+        author: "Kathryn Stockett",
+        coverId: 8387264,
+        rating: 4,
+        totalPages: 451,
+        status: "none",
+        summary: "Three ordinary women are about to take one extraordinary step. Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. She may have a degree, but it is 1962, Mississippi, and her mother will not be happy till Skeeter has a ring on her finger. Skeeter would normally find solace with her beloved maid Constantine, the woman...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Meredith",
+                avatar: "M",
+                review_rating: 0, 
+                text: "Did Not Finish. I have this terrible, dreary feeling in my diaphragm area this morning, and I’m not positive what it’s about, but I blame some of it on this book, which I am not going to finish. I have a friend who is mad at me right now for liking stupid stuff, but the thing is that I do like stupid stuff...",
+            },
+            {
+                id: 2, 
+                name: "Caroline",
+                avatar: "C",
+                review_rating: 1,
+                text: "I was uncomfortable with the tone of the book; I felt that the author played to very stereotypical themes, and gave the characters (especially the African American ones) very inappropriate and obvious voices and structure in terms constructing their mental character. I understand that..."
+            },
+            {
+                id: 3, 
+                name: "Lisa",
+                avatar: "L",
+                review_rating: 5,
+                text: "OK. Wow. Wipes Away Tears. The Help is a fictional story set in Mississippi in 1962. The perspective shifts between three characters: two black maids, Aibileen and Minnie..."
+            },
+            {
+                id: 4,
+                name: "Maegen",
+                avatar: "M",
+                review_rating: 1,
+                text: "While it was a well-written effort, I didn't find it as breathtaking as the rest of the world. It more or less rubbed me the wrong way. It reads like the musings of a white woman attempting to have an uncomfortable conversation, without really wanting to be uncomfortable. It's incredibly..."
+            },
+            {
+                id: 5,
+                name: "Annalisa",
+                avatar: "A",
+                review_rating: 5,
+                text: "Here is an illustrative tale of what it was like to be a black maid during the civil rights movement of the 1960s in racially conflicted Mississippi. There is such deep history in the black/white relationship and this story beautifully shows the complex spectrum, not only the hate, abuse..."
+            },
+        ],
+        year_published: 2009,
+        literary_awards: [
+            "Orange Prize Nominee for Fiction Longlist (2010)",
+            "Audie Award for Fiction (2010)",
+            "Goodreads Choice Award for Fiction (2009)"
+        ],
+        series: "",
+    },
+    "water-for-elephants": {
+        id: "water-for-elephants",
+        title: "Water for Elephants",
+        author: "Sara Gruen",
+        coverId: 6690864,
+        rating: 4,
+        totalPages: 368,
+        status: "none",
+        summary: "When Jacob Jankowski, recently orphaned and suddenly adrift, jumps onto a passing train, he enters a world of freaks, drifters, and misfits, a second-rate circus struggling to survive during the Great Depression, making one-night stands in town after endless town. A veterinary student who almost earned his degree, Jacob is put in charge of caring for the circus menagerie. It is there that...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Rachel",
+                avatar: "R",
+                review_rating: 1, 
+                text: "I really wanted to like this book. I think my low opinion is partially my fault, because I drove into the story with high expectations due to rave reviews. I need to learn not to do that....",
+            },
+            {
+                id: 2, 
+                name: "Will",
+                avatar: "W",
+                review_rating: 4,
+                text: "Ladies and gentlemen. Direct your attention to the performer in print. You will be amazed, dazzled and mystified by the daring feats you are about to witness. Well, that might be overstating a bit. The story does open with drama, though. A circus menagerie has gotten loose and..."
+            },
+            {
+                id: 3, 
+                name: "Caz",
+                avatar: "C",
+                review_rating: 4,
+                text: "Oh man, this was lovely...."
+            },
+            {
+                id: 4,
+                name: "Nataliya",
+                avatar: "N",
+                review_rating: 3,
+                text: "I picked up Water for Elephants after seeing the movie. You know, the one with that Twilight guy - who for a change was allowed to smile. And to have other facial expressions besides permanently constipated. The math is simple:..."
+            },
+            {
+                id: 5,
+                name: "RJ",
+                avatar: "R",
+                review_rating: 5,
+                text: "Sara Gruen’s Water for Elephants is one of those rare novels, that will be read and re-read, discussed and enjoyed for many years, by old and young alike. Destined to be passed between family and friends and back again, until the tattered, time worn pages resemble the books..."
+            },
+        ],
+        year_published: 2007,
+        literary_awards: [
+            "Book Sense Book of the Year Award for Adult Fiction (2007)",
+            "ALA Alex Award (2007)",
+        ],
+        series: "",
+    },
+    "kite-runner": {
+        id: "kite-runner",
+        title: "The Kite Runner",
+        author: "Khaled Hosseini",
+        coverId: 14846827,
+        rating: 4,
+        totalPages: 371,
+        status: "none",
+        summary: "1970s Twelve-year-old Amir is desperate to win the local kite-fighting tournament and his loyal friend Hassan promises to help him. But neither of the boys can foresee what would happen to Hassan that afternoon, an event that is to shatter their lives. After the Russians invade and the family is forced to flee to America, Amir realises that one day he must return to an Afghanistan under Taliban rule to find the one thing that his new world cannot grant redemption...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Linda",
+                avatar: "L",
+                review_rating: 1, 
+                text: "Finished this book about a month ago but it's taken me this long to write a review about it because I have such mixed feelings about it. It was a deeply affecting novel, but mostly not in a good way. I really wanted to like it, but the more I think about what I didn't like about the book, the...",
+            },
+            {
+                id: 2, 
+                name: "Max",
+                avatar: "M",
+                review_rating: 5,
+                text: "In 2012, when I was Mathematics teacher at a private high school in Iran, I had an Afghan student in my class. Sometimes, I discussed with my students about literature, and I told them of novels and poem. I found it very strange that my students had no interest in literature and even..."
+            },
+            {
+                id: 3, 
+                name: "J.G.",
+                avatar: "J",
+                review_rating: 2,
+                text: "This is the sort of book White America reads to feel worldly. Just like the spate of Native American pop fiction in the late eighties, this is overwhelmingly colonized literature, in that it pretends to reveal some aspect of the 'other' culture, but on closer inspection (aside from the..."
+            },
+            {
+                id: 4,
+                name: "Tharindu",
+                avatar: "T",
+                review_rating: 5,
+                text: "Sad stories make good books. I became what I am today at the age of twelve, on a frigid overcast day in the winter of 1975..."
+            },
+            {
+                id: 5,
+                name: "Britta",
+                avatar: "B",
+                review_rating: 5,
+                text: "For you, a thousand times over. Children aren't coloring books. You don't get to fill them with your favorite colors..."
+            },
+        ],
+        year_published: 2003,
+        literary_awards: [
+            "Humo's Gouden Bladwijzer (2008)",
+            "Puddly Award for Fiction (2006)",
+        ],
+        series: "",
+    },
+    "girl-from-train": {
+        id: "girl-from-train",
+        title: "The Girl from the Train",
+        author: "Irma Joubert",
+        coverId: 11637932,
+        rating: 4,
+        totalPages: 379,
+        status: "none",
+        summary: "Six-year-old Gretl Schmidt is on a train bound for Auschwitz. Jakób Kowalski is planting a bomb on the tracks. As World War II draws to a close, Jakób fights with the Polish resistance against the crushing forces of Germany and Russia. They intend to destroy a German troop transport, but Gretl’s unscheduled train reaches the bomb first...",
+        genres: ["Historical Fiction", "Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Savanna",
+                avatar: "S",
+                review_rating: 5, 
+                text: "Wow. I’ll say it again. Wow. I was not prepared for this book. The premise and the cover intrigued me, but I had no idea the journey I would be taking. I don’t exaggerate when I say...",
+            },
+            {
+                id: 2, 
+                name: "Beth",
+                avatar: "B",
+                review_rating: 5,
+                text: "Rarely is there a historical novel that that so perfectly places all of its elements in a balanced way. The Girl from the Train is a love story, but it’s not a romance. It’s a book about..."
+            },
+            {
+                id: 3, 
+                name: "Lori",
+                avatar: "L",
+                review_rating: 3,
+                text: "WWII fiction seems to be everywhere today and I have enjoyed many of them. This particular novel left me wanting. I wanted to feel more for these characters. I just felt that as..."
+            },
+            {
+                id: 4,
+                name: "Elisabeth",
+                avatar: "E",
+                review_rating: 4,
+                text: "An interesting historical read that included some adventure and romance. The Girl from the Train tells the story of Gretl who is the daughter of a German father and Jewish..."
+            },
+            {
+                id: 5,
+                name: "Rose",
+                avatar: "R",
+                review_rating: 3,
+                text: "I have no doubt this will be a popular book club title, however there were several aspects of the book that will prevent me from recommending..."
+            },
+        ],
+        year_published: 2007,
+        literary_awards: [
+            "Christy Award Nominee for Historical (2016)",
+        ],
+        series: "Tussen Stasies",
+    },
+    "guernsey-literary-potato": {
+        id: "guernsey-literary-potato",
+        title: "The Guernsey Literary and Potato Peel Pie Society",
+        author: "Mary Ann Shaffer, Annie Barrows",
+        coverId: 14859218,
+        rating: 4,
+        totalPages: 291,
+        status: "none",
+        summary: "As Juliet and her new correspondent exchange letters, Juliet is drawn into the world of this man and his friends—and what a wonderfully eccentric world it is. The Guernsey Literary and Potato Peel Pie Society—born as a spur-of-the-moment alibi when its members were discovered breaking curfew by the Germans occupying their island—boasts a charming, funny...",
+        genres: ["Historical Fiction", "Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Megha",
+                avatar: "M",
+                review_rating: 1, 
+                text: "Dear Mary Ann Shaffer, I recently read your book 'The Guernsey Literary and Potato Peel Pie Society'. It brought a few questions to my mind. Learning from your bad example, I will quit trying to be fancy, stop this letter here and write a regular review...",
+            },
+            {
+                id: 2, 
+                name: "Linda",
+                avatar: "L",
+                review_rating: 5,
+                text: "Several years ago, I worked at an art gallery here in Anchorage. Though I loved the art, I wasn’t much good at selling it. More often than not, I just chatted up the customers, who were..."
+            },
+            {
+                id: 3, 
+                name: "Zoe",
+                avatar: "Z",
+                review_rating: 4,
+                text: "Although the abrupt ending frustrated me, the rest of the book was so soothing. This is probably due to the fact it was written in letters to loved ones and not the subject matter itself..."
+            },
+            {
+                id: 4,
+                name: "Will",
+                avatar: "W",
+                review_rating: 4,
+                text: "The GL&PPPS tells of Nazi occupation of this Channel Island during WW II. The story is told via a series of letters exchanged between residents of the island and a writer attempting to learn about their experiences. We are offered a wide range of characters, some..."
+            },
+            {
+                id: 5,
+                name: "Emma",
+                avatar: "E",
+                review_rating: 2,
+                text: "I don't know why I started reading this, and I don't know why I continued reading this, and I don't know why I finished reading this...."
+            },
+        ],
+        year_published: 2008,
+        literary_awards: [
+            "Indies Choice Book Award for Best Indie Buzz Book (Fiction)(2009)",
+        ],
+        series: "",
+    },
+    "handmaids-tale": {
+        id: "handmaids-tale",
+        title: "The Handmaid's Tale",
+        author: "Margaret Atwood",
+        coverId: 8231851,
+        rating: 4,
+        totalPages: 311,
+        status: "none",
+        summary: "Offred is a Handmaid in the Republic of Gilead. She may leave the home of the Commander and his wife once a day to walk to food markets whose signs are now pictures instead of words because women are no longer allowed to read. She must lie on...",
+        genres: ["Fiction", "Dystopia", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Kate",
+                avatar: "K",
+                review_rating: 1, 
+                text: "Extremist Judeo-Christian beliefs have won America's culture war. Now women have no rights. They are slaves to men and the biblical, patriarchal society in which they live. The Handmaid's Tale is the first-person account of one of these enslaved women....",
+            },
+            {
+                id: 2, 
+                name: "Sean",
+                avatar: "S",
+                review_rating: 5,
+                text: "I’ve been moved by books in the past, many times, but I’ve never before read a book that has emotionally drained me to such a degree. This is frightening and powerful..."
+            },
+            {
+                id: 3, 
+                name: "Adina",
+                avatar: "A",
+                review_rating: 5,
+                text: "I am lying awake in my bed. I keep my eyes closed and beg sleep to come. Fruitlessly! Outside, the rain is whipping the windows without mercy. My husband is sleeping next to me, oblivious to my struggle. I need my thoughts to go away. I need to forget that I just finished the Handmaid's Tale and its effect on..."
+            },
+            {
+                id: 4,
+                name: "Kevin",
+                avatar: "K",
+                review_rating: 3,
+                text: "I was that rarity - an Atwood virgin - and I was knee-tremblingly keen to pop my cherry. I would love to say that I was enthralled and that I am now a fan, but I can't. I simply can't. I'm not a polemicist; it pains me to do this but, aaaghh, I shall be putting my head above the parapet..."
+            },
+            {
+                id: 5,
+                name: "Jayson",
+                avatar: "J",
+                review_rating: 4,
+                text: "Notes: Its scarlet woman's pretty passive, target of temptation, not much plot, though food for thought is ample captivation...."
+            },
+        ],
+        year_published: 1985,
+        literary_awards: [
+            "Booker Prize Nominee (1986)",
+            "Nebula Award Nominee for Best Novel (1986)",
+        ],
+        series: "The Handmaid's Tale (#1)",
+    },
+    "glass-castle": {
+        id: "glass-castle",
+        title: "The Glass Castle",
+        author: "Jeannette Walls",
+        coverId: 11517692,
+        rating: 3,
+        totalPages: 288,
+        status: "none",
+        summary: "The Glass Castle is a remarkable memoir of resilience and redemption, and a revelatory look into a family at once deeply dysfunctional and uniquely vibrant. When sober, Jeannette's brilliant and charismatic father captured his children's imagination, teaching them physics, geology, and how to embrace life fearlessly. But when he drank, he was dishonest...",
+        genres: ["Nonfiction", "Memoir", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Meredith",
+                avatar: "M",
+                review_rating: 5, 
+                text: "My sister saw The Glass Castle on my coffee table and said, “Oh, I read that. It’s kind of . . .” then she paused and we both were awkwardly silent for a minute. “Well, I was going to say, it’s...",
+            },
+            {
+                id: 2, 
+                name: "Emily",
+                avatar: "E",
+                review_rating: 4,
+                text: "Now I get why people like this memoir so much...."
+            },
+            {
+                id: 3, 
+                name: "Brady",
+                avatar: "B",
+                review_rating: 3,
+                text: "What a WILDDD ride! I listened to this one on audio and hearing Jeannette narrate her life was truly jaw-dropping. I was SO angry at the parents so many times, but talk about a family..."
+            },
+            {
+                id: 4,
+                name: "Mischenko",
+                avatar: "M",
+                review_rating: 5,
+                text: "This memoir has to be one of the most unique memoirs I’ve ever read. My review might contain spoilers...."
+            },
+            {
+                id: 5,
+                name: "Cindy",
+                avatar: "C",
+                review_rating: 4,
+                text: "It took me a while to get into this book, but there's a lot of interesting family dynamics and complicated familial love despite all the awful things that happened. I think this book would..."
+            },
+        ],
+        year_published: 2006,
+        literary_awards: [
+            "ALA Alex Award (2006)",
+            "Lincoln Award Nominee (2008)",
+        ],
+        series: "",
+    },
 };
+

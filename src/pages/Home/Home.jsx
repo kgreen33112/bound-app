@@ -8,7 +8,7 @@ import Card from '../../components/Card/Card';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { LuSparkles } from 'react-icons/lu';
 import BookRow from '../../components/Books/BookRow';
-import { books } from '../../assets/data/books';
+import  { books } from '../../assets/data/books';
 import { recommendationRows } from '../../assets/data/recommendationRows';
 import { Link } from "react-router-dom";
 import { useState } from 'react';

@@ -14,6 +14,7 @@ function FeaturedListPage({ books }) {
 
     const listBooks = list.bookIds.map((id) => books[id]);
 
+
     return (
         <main className="main-content">
             <h1>{list.title}</h1>
