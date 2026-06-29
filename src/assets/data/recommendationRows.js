@@ -1,12 +1,18 @@
 export const recommendationRows = [
     {
         id: "acotar-recs",
-        title: "Because you liked A Court of Thorn and Roses",
+        title: "Because you liked A Court of Thorns and Roses",
         bookIds: [
             'from-blood-and-ash', 
             'serpent-wings-night', 
             'fourth-wing', 
             'crescent-city',
+            'ballad-falling-dragons',
+            'last-contract-isako',
+            'quicksilver',
+            'powerless',
+            'cruel-prince',
+            'lights-out'
         ],
     },
     {
@@ -17,6 +23,12 @@ export const recommendationRows = [
             'alice-network', 
             'four-winds', 
             'atmosphere',
+            'correspondent',
+            'wedding-people',
+            'heart-the-lover',
+            'all-the-light',
+            'my-friends',
+            'where-crawdads-sing',
         ],
     },
     {
@@ -27,6 +39,12 @@ export const recommendationRows = [
             'love-comes-softly', 
             'bridge-to-haven', 
             'the-shack',
+            'crazy-love',
+            'purpose-driven-life',
+            'screwtape-letters',
+            'case-for-christ',
+            'hiding-place',
+            'captivating',
         ],
     },
    

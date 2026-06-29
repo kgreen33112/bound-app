@@ -107,7 +107,7 @@ export const books = {
         ],
         series: "Blood and Ash (#1)",
     },
-       "serpent-wings-night": {
+    "serpent-wings-night": {
         id: "serpent-wings-night",
         title: "The Serpent & the Wings of Night",
         author: "Carissa Broadbent",
@@ -217,7 +217,7 @@ export const books = {
         ],
         series: "The Empyrean (#1)",
     },
-        "crescent-city": {
+    "crescent-city": {
         id: "crescent-city",
         title: "Crescent City",
         author: "Sarah J. Maas",
@@ -4488,6 +4488,274 @@ export const books = {
         literary_awards: [
             "ALA Alex Award (2006)",
             "Lincoln Award Nominee (2008)",
+        ],
+        series: "",
+    },
+    "where-crawdads-sing": {
+        id: "where-crawdads-sing",
+        title: "Where the Crawdads Sing",
+        author: "Delia Owens",
+        coverId: 8362947,
+        rating: 4,
+        totalPages: 384,
+        status: "none",
+        summary: "For years, rumors of the “Marsh Girl” haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews is found dead, locals immediately suspect her...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Brandy",
+                avatar: "B",
+                review_rating: 1, 
+                text: "Wow. Like so many people, I read this book because my book club chose it. Unlike so many people, I am not impressed. Not even a little bit. A lot of times when a book is rated this high, I tend to think it's me and not the book. But nope. This time I fully believe it's the book....",
+            },
+            {
+                id: 2, 
+                name: "Betsy",
+                avatar: "B",
+                review_rating: 1,
+                text: "Dear Goodreaders, If you loved this book, I'm very happy for you. As a reader and also somebody who works in the publishing industry, I want all readers to like or love as many books as possible, so the fact that you love this book is, in my opinion, a good thing. If reading a review that does not..."
+            },
+            {
+                id: 3, 
+                name: "Debra",
+                avatar: "D",
+                review_rating: 5,
+                text: "All the stars!!!!!!! Can I just say that I loved everything about this book and leave it at that!?!..."
+            },
+            {
+                id: 4,
+                name: "Miranda",
+                avatar: "M",
+                review_rating: 5,
+                text: "Kya Clark - the Marsh Girl - led a lonely life. Her mother left her, her siblings left her, her father went out and never came home. The townspeople abhorred her and left her well-alone..."
+            },
+            {
+                id: 5,
+                name: "Kristin",
+                avatar: "K",
+                review_rating: 5,
+                text: "WHERE THE CRAWDADS SING is a gentle yet symbolic depiction of the valiant survival of Kya Clark—a reclusive young girl who has been abandoned by her parents, siblings, school system, the entire town surrounding her, and what ultimately feels like life itself..."
+            },
+        ],
+        year_published: 2018,
+        literary_awards: [
+            "Edgar Allen Poe Award Nominee for Best Friend Novel by an American Author (2019)",
+            "Goodreads Choice Award Nominee for Historical Fiction (2018)",
+        ],
+        series: "",
+    },
+    "buckeye": {
+        id: "buckeye",
+        title: "Buckeye",
+        author: "Patrick Ryan",
+        coverId: 15119658,
+        rating: 4,
+        totalPages: 464,
+        status: "none",
+        summary: "That, as he saw it now, was his life’s work: trying to make right what he’d gotten wrong. Wasn’t that a fair measure of a person, what they did with their mistakes? In the jubilant aftermath of the Allied victory in Europe, Cal Jenkins, a man wounded not in war but by his inability to serve in it, shares a single, life-altering moment with Margaret Salt...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Jen",
+                avatar: "J",
+                review_rating: 5, 
+                text: "A sweeping story that starts in the 1920’s through to the 1970’s, in a town in the mid-west of Bonhomie, Ohio. A story of 2 couples whose lives become entangled....",
+            },
+            {
+                id: 2, 
+                name: "Summer",
+                avatar: "S",
+                review_rating: 5,
+                text: "Buckeye paints a beautiful portrait of small-town America. Spanning from the 1930s through the 1980s, this multilayered, poignant tale had me captivated. The book touches on so..."
+            },
+            {
+                id: 3, 
+                name: "Bob",
+                avatar: "B",
+                review_rating: 3,
+                text: "I can't put my finger on what it is, exactly, that draws me in and hooks me to some literary fiction and not others, but this was one of the others. A character novel of families and marriages and love and strife and forgiveness: it should have been right up my alley, but I..."
+            },
+            {
+                id: 4,
+                name: "Ellen",
+                avatar: "E",
+                review_rating: 5,
+                text: "i need like 15 more of this style of book IMMEDIATELY. adored this..."
+            },
+            {
+                id: 5,
+                name: "Karen",
+                avatar: "K",
+                review_rating: 5,
+                text: "This is an emotionally poignant and beautifully written novel that follows two families through four decades living in the fictional small town of Bonhomie, Ohio. Set against the backdrop of both World War ll and the Vietnam war...."
+            },
+        ],
+        year_published: 2025,
+        literary_awards: [
+            "She Reads Best of Award Nominee for Historical Fiction (2025)",
+            "Barnes & Noble Book of the Year Award Nominee (2025)",
+        ],
+        series: "",
+    },
+    "yesteryear": {
+        id: "yesteryear",
+        title: "Yesteryear",
+        author: "Caro Claire Burke",
+        coverId: 15213215,
+        rating: 3,
+        totalPages: 400,
+        status: "none",
+        summary: "A traditional American woman, a “tradwife” influencer, suddenly awakens in the brutal reality of 1855—where she must unravel whether this living nightmare is an elaborate hoax, a twisted reality show, or something far more sinister in this sensational debut novel...",
+        genres: ["Fiction", "Historical Fiction", "Book Club"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Yun",
+                avatar: "Y",
+                review_rating: 2, 
+                text: "Was this supposed to funny? Cause I didn't laugh. Going in, I thought Yesteryear would be a slam dunk for me. But now I've found myself in the unexpected position of being just about the only...",
+            },
+            {
+                id: 2, 
+                name: "Dom",
+                avatar: "D",
+                review_rating: 2,
+                text: "WARNING: This is a brain-on review with (hidden) spoilers, as I am mentally unable to turn my brain off while reading anything. Yesteryear has one of the most compelling premises I’ve come across: a wildly successful tradwife influencer is forced to actually live the life she..."
+            },
+            {
+                id: 3, 
+                name: "Nilufer",
+                avatar: "N",
+                review_rating: 4,
+                text: "Honestly, this is one of the most mind bending reading experiences I have had in a long time. When I finished this book, my head was spinning. I felt stunned, unsettled, confused, deeply shaken, and yet ultimately impressed because what I thought I was signing up for was..."
+            },
+            {
+                id: 4,
+                name: "Brooke",
+                avatar: "B",
+                review_rating: 4,
+                text: "Gimme a minute..."
+            },
+            {
+                id: 5,
+                name: "Lauren",
+                avatar: "L",
+                review_rating: 1,
+                text: "Is this a social experiment? This book is objectively REALLY bad. It’s the epitome of going so far left that you end up right. The structure was messy and confusing and the writing itself was quite poor— which was possibly intentional, but it felt like I was reading someone’s ramblings..."
+            },
+        ],
+        year_published: 2026,
+        literary_awards: [
+            "Barnes & Noble Discover Prize Nominee (2026)",
+        ],
+        series: "",
+    },
+    "the-road-to-tender-hearts": {
+        id: "the-road-to-tender-hearts",
+        title: "The Road to Tender Hearts",
+        author: "Annie Hartnett",
+        coverId: 15178285,
+        rating: 4,
+        totalPages: 384,
+        status: "none",
+        summary: "A darkly comic and warm-hearted novel about an old man on a cross-country mission to reunite with his high school crush—bringing together his adult daughter, two orphaned kids, and a cat who can predict death—from the beloved author of Rabbit Cake and Unlikely Animals...",
+        genres: ["Fiction", "Book Club", "Contemporary"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Jack",
+                avatar: "J",
+                review_rating: 4, 
+                text: "I cannot stress this enough: if you are in a reading slump READ THIS BOOK. A lottery winner who has squandered his winnings on booze is suddenly saddled with two orphaned children as their next of kin. Together with his own adult daughter and Pancakes...",
+            },
+            {
+                id: 2, 
+                name: "Brady",
+                avatar: "B",
+                review_rating: 4,
+                text: "this book felt like a classic 90’s/early 2000’s rom-com with a some tidbits of Parks & Rec humor sprinkled in, ya know? laugh out loud funny, heartwarming with finding family in the most unlikely of places, and dealing with heavier topics in a very lighthearted way. cute! fun! had a great time & the audio book was great (even narrated by a man *gasp!!*)"
+            },
+            {
+                id: 3, 
+                name: "Farda",
+                avatar: "F",
+                review_rating: 4,
+                text: "This feels like a '90s holiday feel-good movie, with cheesy scenes and funny moments throughout..."
+            },
+            {
+                id: 4,
+                name: "Jan",
+                avatar: "J",
+                review_rating: 4,
+                text: "63 year old PJ is an unemployed alcoholic who won $1.5 million in the lottery some years ago. The tragedy of his older daughter’s death still has him reeling, he is semi-estranged..."
+            },
+            {
+                id: 5,
+                name: "Andrea",
+                avatar: "A",
+                review_rating: 5,
+                text: "An ABSOLUTE MUST READ!! Maybe just skip reading my review because there’s no way I can write a review that will do justice to this brilliant and heartwarming story, and instead pre-order your copy now!..."
+            },
+        ],
+        year_published: 2025,
+        literary_awards: [
+            "She Reads Best of Award Nominee for Contemporary Fiction (2025)",
+        ],
+        series: "",
+    },
+    "wild-dark-shore": {
+        id: "wild-dark-shore",
+        title: "Wild Dark Shore",
+        author: "Charlotte McConaghy",
+        coverId: 15146235,
+        rating: 4,
+        totalPages: 320,
+        status: "none",
+        summary: "A family on a remote island. A mysterious woman washed ashore. A storm gathering force. Dominic Salt and his three children are caretakers of Shearwater, a tiny weather-lashed island that is home to the world's largest seed bank. As Shearwater risks being lost to rising sea levels, the island's researchers have fled, and only the Salts remain...",
+        genres: ["Fiction", "Book Club", "Mystery"],
+        reviews: [
+            {
+                id: 1, 
+                name: "Yun",
+                avatar: "Y",
+                review_rating: 2, 
+                text: "Hmm let's think about this now. Hey, I know! How about you just tell the truth? Ah yes, the dreaded miscommunication trope. You dress it up with some slump-inducing descriptive prose, make every character act as weird and paranoid as possible, throw in some instalove, and you have Wild Dark Shore...",
+            },
+            {
+                id: 2, 
+                name: "Nilufer",
+                avatar: "N",
+                review_rating: 5,
+                text: "There’s nothing I can write here that could truly give enough praise or express how much this book meant to me—it might just be the best thing I’ve read all year. It made me scream-cry. It hurt me more than I expected. It shattered me into pieces. It opened up so many old wounds..."
+            },
+            {
+                id: 3, 
+                name: "Emily",
+                avatar: "E",
+                review_rating: 5,
+                text: "i would give this book 100 stars if I could. WOWOWOWOW THIS WAS SO FREAKING GOOD AND I LOOOOOVED IT!!!!! if there is one book you pre order, make it this one...."
+            },
+            {
+                id: 4,
+                name: "Natalie",
+                avatar: "N",
+                review_rating: 3,
+                text: "This was….fine? I really don’t understand the hype here. The writing is definitely quite lyrical and certainly places the reader in the wild and unrelenting wilderness of the island, it was certainly atmospheric. But all that great setting just couldn’t get me to really feel sucked in by the plot or characters. They felt like the briefest of brush strokes which felt like I was..."
+            },
+            {
+                id: 5,
+                name: "Kristen",
+                avatar: "K",
+                review_rating: 2,
+                text: "Omg 90% of you snorted seed dust from the vault. Truly. Even if you take out all the boring cheesy plant and nature crap…this book is still boring af. It didn’t even know what it wanted to be! A thriller? No. A romance? Ew no. That plotline made even less sense. Climate control? Barely. We had some oceans rising and people that were in love with seeds kinda..."
+            },
+        ],
+        year_published: 2025,
+        literary_awards: [
+            "Audie Award Nominee for Audiobook of the Year (2026)",
+            "Goodreads Choice Award Nominee for Fiction (2025)"  
         ],
         series: "",
     },

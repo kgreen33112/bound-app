@@ -1,7 +1,7 @@
 import './Header.css';
 import { LuCirclePlus, LuLibrary, LuScanSearch } from 'react-icons/lu';
 import BookA from '../../assets/images/BookA.png';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState } from "react";
 
 function Header () {
@@ -28,7 +28,9 @@ function Header () {
                         alt="Bound Logo"
                     />
                 </div>
-                <LuCirclePlus className="header-icon" />
+                <Link to="/search">
+                    <LuCirclePlus className="header-icon" />
+                </Link>
             </div>
             <div className="header-search">
                 <LuScanSearch className="search-icon" />                     

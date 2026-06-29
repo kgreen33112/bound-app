@@ -9,12 +9,14 @@
 
 .list-book-cover {
     width: 4rem;
-    height: auto;
+    height: 6rem;
+    align-self: center;
 }
 
 .list-book-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: var(--space-sm);
-    margin-left: 2rem;
+    margin-left: var(--space-xs);
 }

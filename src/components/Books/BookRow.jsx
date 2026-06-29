@@ -7,10 +7,11 @@ function BookRow({ title, books }) {
         <section className="book-row">
             <h3 className="recommendation-text">{title}</h3>
 
-            <div className="book-row-list">
+            <div className="book-row-scroll">
                 {books.map(book => (
                     <Link key={book.id} to={`/books/${book.id}`}>
                         <img
+                            className="book-row-cover"
                             key={book.id}
                             src={`https://covers.openlibrary.org/b/id/${book.coverId}-M.jpg`}
                             alt={book.title}

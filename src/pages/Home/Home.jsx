@@ -22,10 +22,22 @@ function Home({ books, updateBookProgress }) {
 
     const progressPercent = Math.round((currentPage / currentRead.totalPages) * 100);
 
+    const readBooks = Object.values(books).filter(
+        (book) => book.status === "read"
+    );
+
+    const challengeGoal = 52;
+
+    const challengePercent = Math.round(
+        (readBooks.length / challengeGoal) * 100
+    );
+
     //modal save
     function handleSaveProgress(newPage) {
         updateBookProgress(currentRead.id, newPage);
     }
+
+    
 
     return (
         <main className="main-content">
@@ -77,8 +89,8 @@ function Home({ books, updateBookProgress }) {
             <SectionTitle className="section-subtitle">Reading Challenge</SectionTitle>
             <Card>
                 <div className="challenge-title">2026 Reading Challenge: 52 Books</div>
-                <ProgressBar percent={17} />
-                <p>8 out of 52 books read</p>
+                <ProgressBar percent={challengePercent} />
+                <p>{readBooks.length} of {challengeGoal} books read</p>
             </Card>
             <SectionTitle className="section-subtitle">Recommendations</SectionTitle>
             <div className="book-row-container">

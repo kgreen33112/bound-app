@@ -4,14 +4,22 @@
     margin-top: var(--space-md);
 }
 
-.book-row-list {
+.book-row-scroll {
     display: flex;
-    padding: var(--space-md);
     gap: var(--space-md);
-    margin-bottom: var(--space-sm);
+    overflow-x: auto;
+    padding-bottom: var(--space-sm);
+    scroll-snap-type: x mandatory;
 }
 
-.book-row img {
+.book-row-scroll a {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.book-row-cover {
     width: 5rem;
-    height: auto;
+    height: 7.5rem;
+    object-fit: cover;
+    border-radius: 0.35rem;
 }
