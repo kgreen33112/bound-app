@@ -1,3 +1,5 @@
+/* Mobile */
+
 .content-card {
     display: flex;
     flex-direction: column;
@@ -7,4 +9,9 @@
     box-shadow: var(--shadow-md);
     border-radius: var(--radius-md);
     margin-bottom: var(--space-md);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
 }

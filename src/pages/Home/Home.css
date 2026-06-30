@@ -1,10 +1,6 @@
+/*Mobile*/
 
 /*Currently Reading*/
-.title {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: var(--space-sm);
-}
 
 .lg-book-cover {
     width: 12rem;
@@ -44,4 +40,16 @@
 .see-more-btn-container {
     display: flex;
     justify-content: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .lg-book-cover {
+        width: 24rem;
+        height: auto;
+    }
+
+    .book-info {
+        font-size: 1.5rem;
+    }
 }

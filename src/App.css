@@ -1,9 +1,17 @@
 /* Use for app layout, page-level styling, shared component styling*/
-/* Mobile-First Design */
+/* Mobile */
 
 .app {
     min-height: 100vh;
     max-width: 480px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .app {
+        min-height: 100vh;
+        max-width: 768px;
+    }
 }

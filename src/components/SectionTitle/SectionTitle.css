@@ -1,3 +1,5 @@
+/* Mobile */
+
 .section-title {
     color: var(--text);
     font-weight: 700;
@@ -7,4 +9,15 @@
 .section-subtitle {
     font-weight: 500;
     font-size: 1.25rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-subtitle {
+        font-size: 2.25rem;
+    }
 }

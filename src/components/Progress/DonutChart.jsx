@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import './DonutChart.css';
 
 function DonutChart({ percent = 25 }) {
@@ -9,24 +9,27 @@ function DonutChart({ percent = 25 }) {
 
     const colors = ["#456481", "#B3C5D6"];
 
+
     return (
-        <>
-            <PieChart width={140} height={140}>
-                <Pie
-                    data={data}
-                    dataKey="value"
-                    innerRadius={35}
-                    outerRadius={60}
-                    startAngle={90}
-                    endAngle={-270}
-                    stroke="none"
-                >
-                    {data.map((entry, index) => (
-                        <Cell key={entry.name} fill={colors[index]} />
-                    ))}
-                </Pie>
-            </PieChart>
-        </>    
+            <div className="donut-wrapper">
+                <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                        <Pie
+                            data={data}
+                            dataKey="value"
+                            innerRadius={40}
+                            outerRadius={70}
+                            startAngle={90}
+                            endAngle={-270}
+                            stroke="none"
+                        >
+                            {data.map((entry, index) => (
+                                <Cell key={entry.name} fill={colors[index]} />
+                            ))}
+                        </Pie>
+                    </PieChart>
+                </ResponsiveContainer>
+            </div>
     );
 }
 

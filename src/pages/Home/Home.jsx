@@ -68,7 +68,7 @@ function Home({ books, updateBookProgress }) {
             <SectionTitle className="section-subtitle">Progress</SectionTitle>
             <Card>
                 <div className="donut-chart-container">
-                    <DonutChart percent={progressPercent} />
+                    <DonutChart percent={progressPercent} size={140} />
                 </div>
                 <span className="donut-chart-stat">{progressPercent}% read</span>
                 <div className="progress-btn-container">
