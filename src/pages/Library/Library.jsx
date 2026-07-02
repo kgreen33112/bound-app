@@ -45,7 +45,7 @@ function Library ({ books, updateBookProgress }) {
 
         return (
             <main className="main-content">
-                <SectionTitle>Reading:</SectionTitle>
+                <SectionTitle>Currently Reading:</SectionTitle>
                 <Card className="current-reading-card">
                     <img 
                     className="md-book-cover"

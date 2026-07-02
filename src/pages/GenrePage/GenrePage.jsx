@@ -1,6 +1,7 @@
 import './GenrePage.css';
 import { useParams, Link } from "react-router-dom";
 import Card from '../../components/Card/Card';
+import StarRating from '../../components/StarRating/StarRating';
 
 function GenrePage ({ books }) {
     const { genreId } = useParams();
@@ -26,6 +27,7 @@ function GenrePage ({ books }) {
                         <div className="genre-page-info">
                             <h3>{book.title}</h3>
                             <p>{book.author}</p>
+                            <StarRating rating={book.rating} size={20} />
                         </div>
                     </Card>
                 ))}

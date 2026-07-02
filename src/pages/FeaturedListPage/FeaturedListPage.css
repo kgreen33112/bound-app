@@ -1,3 +1,4 @@
+/* Mobile */
 .list-cover-card {
     display: flex;
     padding: var(--space-sm);
@@ -19,4 +20,24 @@
     justify-content: center;
     gap: var(--space-sm);
     margin-left: var(--space-xs);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .list-cover-card {
+        padding: var(--space-md);
+        gap: var(--space-lg);
+        margin: var(--space-lg);
+    }
+
+    .list-book-cover {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .list-book-info {
+        font-size: 1.5rem;
+        gap: var(--space-md);
+        margin-left: var(--space-sm);
+    }
 }

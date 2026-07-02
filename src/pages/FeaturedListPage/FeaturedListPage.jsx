@@ -30,7 +30,7 @@ function FeaturedListPage({ books }) {
                         <div className="list-book-info">
                             <h3>{book.title}</h3>
                             <p>{book.author}</p>
-                            <StarRating size={14} rating={book.rating} />
+                            <StarRating size={16} rating={book.rating} />
                         </div>
                     </div>
                 </Link>

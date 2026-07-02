@@ -1,3 +1,4 @@
+/* Mobile */
 .recommendation-text {
     font-size: 0.75rem;
     margin-bottom: var(--space-sm);
@@ -22,4 +23,22 @@
     height: 7.5rem;
     object-fit: cover;
     border-radius: 0.35rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .book-row {
+        margin-bottom: 2rem;
+    }
+    
+    .recommendation-text {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-md);
+        margin-top: var(--space-lg);
+    }    
+
+    .book-row-cover {
+        width: 8rem;
+        height: 12rem;
+    }
 }

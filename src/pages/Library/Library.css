@@ -1,4 +1,4 @@
-/*Currently Reading*/
+/* Mobile */
 .current-reading-card {
     display: flex;
     flex-direction: row;
@@ -66,4 +66,34 @@
     font-size: 1rem;
     box-shadow: var(--shadow-md);
     margin: var(--space-md);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .md-book-cover {
+        width: 20rem;
+        height: auto;
+    }
+
+    .current-book-info {
+        font-size: 1.5rem;
+    }
+
+    .progress-container p {
+        font-size: 1.5rem;
+    }
+
+    .library-progress {
+        width: 28rem;
+    }
+
+    .library-progress span {
+        font-size: 1.5rem;
+    }
+
+    .add-shelf-btn {
+        font-size: 1.5rem;
+        width: 16rem;
+        margin-top: 2rem;
+    }
 }

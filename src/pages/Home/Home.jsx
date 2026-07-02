@@ -43,26 +43,28 @@ function Home({ books, updateBookProgress }) {
         <main className="main-content">
             <SectionTitle>Currently Reading</SectionTitle>
             <Card>
-                <Link to={`/books/${currentRead.id}`}>
-                    <img 
-                        className="lg-book-cover"
-                        src={`https://covers.openlibrary.org/b/id/${currentRead.coverId}-L.jpg`}
-                        alt={currentRead.title}
-                        onError={(e) => {
-                            e.currentTarget.src = TheoOfGolden;
-                        }}
-                    />
-                </Link>
+                <div className="currently-reading-content">
+                    <Link to={`/books/${currentRead.id}`}>
+                        <img 
+                            className="lg-book-cover"
+                            src={`https://covers.openlibrary.org/b/id/${currentRead.coverId}-L.jpg`}
+                            alt={currentRead.title}
+                            onError={(e) => {
+                                e.currentTarget.src = TheoOfGolden;
+                            }}
+                        />
+                    </Link>
                     
-                <div className="book-info">
-                    <h3>{currentRead.title}</h3>
-                    <p>{currentRead.author}</p>
+                    <div className="book-info">
+                        <h3>{currentRead.title}</h3>
+                        <p>{currentRead.author}</p>
+                    <Link to={`/books/${currentRead.id}`}>
+                        <Button>
+                               Continue Reading
+                        </Button>
+                    </Link>
+                    </div>
                 </div>
-                <Link to={`/books/${currentRead.id}`}>
-                    <Button>
-                           Continue Reading
-                    </Button>
-                </Link>
                 
             </Card>
             <SectionTitle className="section-subtitle">Progress</SectionTitle>
@@ -90,7 +92,7 @@ function Home({ books, updateBookProgress }) {
             <Card>
                 <div className="challenge-title">2026 Reading Challenge: 52 Books</div>
                 <ProgressBar percent={challengePercent} />
-                <p>{readBooks.length} of {challengeGoal} books read</p>
+                <p className="challenge-stat">{readBooks.length} of {challengeGoal} books read</p>
             </Card>
             <SectionTitle className="section-subtitle">Recommendations</SectionTitle>
             <div className="book-row-container">

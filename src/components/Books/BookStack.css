@@ -1,3 +1,4 @@
+/* Mobile */
 .book-stack {
     position: relative;
     width: 5rem;
@@ -29,4 +30,35 @@
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .book-stack {
+        width: 10rem;
+        height: 14rem;
+    }
+
+    .book-stack-cover {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .book-stack-cover-0 {
+        top: 1.5rem;
+        left: 5rem;
+        z-index: 3;
+    }
+
+    .book-stack-cover-1 {
+        top: 0.75rem;
+        left: 2.5rem;
+        z-index: 2;
+    }
+
+    .book-stack-cover-2 {
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 }

@@ -32,5 +32,17 @@
         width: 14rem;
         font-size: 1.25rem;
         padding: var(--space-sm);
+        margin: var(--space-lg);
+    }
+
+    .see-more-btn {
+        width: 12rem;
+        padding: var(--space-sm);
+        font-size: 1.5rem;
+        margin: var(--space-lg);
+    }
+
+    .btn-icon {
+        font-size: 1.5rem;
     }
 }

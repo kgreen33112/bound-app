@@ -1,3 +1,4 @@
+/* Mobile */
 .shelf-card {
     display: flex;
     gap: var(--space-md);
@@ -9,20 +10,21 @@
     display: inline-block;
     font-weight: 700;
     font-size: 1rem;
-}
-
-.shelf-card-info {
-    border: 2px solid red;
-    display: block;
-    position: relative; 
-    z-index: 999;
-    color: red;
-    background: yellow;
-    font-size: 1rem;
-    font-weight: 400;
+    padding-top: 1rem;
 }
 
 .book-stack {
     display: flex;
     flex-direction: row;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .shelf-title {
+        font-size: 2rem;
+    }
+
+    .shelf-card p {
+        font-size: 1.5rem;
+    }
 }

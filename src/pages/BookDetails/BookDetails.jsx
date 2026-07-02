@@ -5,6 +5,7 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './BookDetails.css';
 import StarRating from "../../components/StarRating/StarRating";
 import fallbackCover2 from '../../assets/images/fallbackCover2.png';
+import { LuBookmark } from "react-icons/lu";
 
 function BookDetails({ books, updateBookStatus }) {
     const { bookId } = useParams();
@@ -25,28 +26,30 @@ function BookDetails({ books, updateBookStatus }) {
                         e.currentTarget.src = fallbackCover2;
                     }}
                 />
-                <div className="book-info">
-                    <h3>{book.title}</h3>
-                    <p>{book.author}</p>
-                </div>
-                <StarRating size={24} rating={book.rating} />
+                <div className="main-book-details">
+                    <div className="book-info">
+                        <h3>{book.title}</h3>
+                        <p>{book.author}</p>
+                    </div>
+                    <StarRating size={24} rating={book.rating} />
                 
-                <label className="status-selector-label" htmlFor="book-status"></label>
+                    <label className="status-selector-label" htmlFor="book-status"></label>
 
-                <select
-                    className="status-selector"
-                    id="book-status"
-                    value={book.status}
-                    onChange={(e) => updateBookStatus(book.id, e.target.value)}
-                >
-                    <option value="none">Not in your library</option>
-                    <option value="currently-reading">Currently Reading</option>
-                    <option value="want-to-read">Want to Read</option>
-                    <option value="read">Read</option>
-                    <option value="comfort-reads">Comfort Reads</option>
-                    <option value="5-star-vault">5-Star Vault</option>
-                    <option value="collections">Collections</option>
-                </select>
+                    <select
+                        className="status-selector"
+                        id="book-status"
+                        value={book.status}
+                        onChange={(e) => updateBookStatus(book.id, e.target.value)}
+                    >
+                        <option value="none">Not in your library</option>
+                        <option value="currently-reading">Currently Reading</option>
+                        <option value="want-to-read">Want to Read</option>
+                        <option value="read">Read</option>
+                        <option value="comfort-reads">Comfort Reads</option>
+                        <option value="5-star-vault">5-Star Vault</option>
+                        <option value="collections">Collections</option>
+                    </select>
+                </div>
             </Card>
             <div className="book-genres">
                 {book.genres.map((genre) => (
@@ -69,11 +72,35 @@ function BookDetails({ books, updateBookStatus }) {
 
                         <div className="review-content">
                             <h4>{review.name}</h4>
-                            <StarRating rating={review.review_rating} />
+                            <StarRating rating={review.review_rating} size="16" />
                             <p>{review.text}</p>
                         </div>
                     </div>
                 ))}
+            </Card>
+            <Card className="metadata-card">
+                <h2>More Information:</h2>
+                <div className="metadata-row">
+                    <span className="meta-label">Number of Pages:</span>
+                    <span className="meta-value">{book.totalPages}</span>
+                </div>
+                <div className="metadata-row">
+                    <span className="meta-label">Published in</span>
+                    <span className="meta-value">{book.year_published}</span>
+                </div>
+                <div className="metadata-row">
+                    <span className="meta-label">Literary Awards:</span>
+                    <div className="meta-value awards-value">
+                        {book.literary_awards.map((award) => (
+                        <span className="award-item" key={award}>
+                            {award}</span>
+                        ))}
+                    </div>
+                </div>
+                <div className="metadata-row">
+                    <span className="meta-label">Series:</span>
+                    <span className="meta-value">{book.series || "Standalone"}</span>  
+                </div>
             </Card>
         </main>
     )

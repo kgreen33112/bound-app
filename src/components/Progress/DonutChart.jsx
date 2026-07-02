@@ -12,8 +12,7 @@ function DonutChart({ percent = 25 }) {
 
     return (
             <div className="donut-wrapper">
-                <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
+                    <PieChart width={140} height={140}>
                         <Pie
                             data={data}
                             dataKey="value"
@@ -28,7 +27,6 @@ function DonutChart({ percent = 25 }) {
                             ))}
                         </Pie>
                     </PieChart>
-                </ResponsiveContainer>
             </div>
     );
 }

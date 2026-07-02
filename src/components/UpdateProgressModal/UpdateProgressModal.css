@@ -1,3 +1,4 @@
+/* Mobile */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -46,4 +47,36 @@
     color: white;
     padding: var(--space-sm);
     border-radius: var(--radius-md);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .modal-overlay {
+        position: fixed;
+        top: 5rem;
+        left: 0.5rem;
+        width: 50rem;
+        height: 50rem;
+        margin-left: 0;
+    }
+
+    .progress-modal {
+        padding: var(--space-lg);
+        font-size: 2rem;
+        gap: var(--space-lg);
+        width: 90%;
+        max-width: 640px;
+    }
+
+    .modal-actions {
+        gap: var(--space-lg);
+    }
+
+    .cancel-btn {
+        padding: var(--space-md);
+    }
+
+    .submit-btn {
+        padding: var(--space-md);
+    }
 }

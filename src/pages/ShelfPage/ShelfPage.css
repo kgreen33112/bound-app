@@ -1,3 +1,4 @@
+/* Mobile */
 .shelf-cover-card {
     display: flex;
     padding: var(--space-sm);
@@ -16,4 +17,16 @@
     flex-direction: column;
     gap: var(--space-sm);
     margin-left: 2rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .shelf-book-cover {
+        width: 8rem;
+        height: 12rem;
+    }
+ 
+    .shelf-book-info {
+        font-size: 1.5rem;
+    }
 }

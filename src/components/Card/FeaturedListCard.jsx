@@ -11,7 +11,7 @@ function FeaturedListCard({ listId, title, books }) {
             className="featured-list-card"
             onClick={() => navigate(`/featured/${listId}`)}>
                 <h3 className="featured-list-title">{title}</h3>
-                <p>{books.length}</p>
+                <p className="featured-list-text">{books.length}</p>
                 <BookStack books={books} />
             </Card>
     )

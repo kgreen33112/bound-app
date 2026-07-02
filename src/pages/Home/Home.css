@@ -2,6 +2,11 @@
 
 /*Currently Reading*/
 
+.currently-reading-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .lg-book-cover {
     width: 12rem;
     height: auto;
@@ -20,8 +25,12 @@
     align-self: center;
 }
 
+.donut-chart-container {
+    display: flex;
+}
+
 /*Reading Challenge*/
-.reading-challenge-card p {
+.challenge-stat {
     font-size: 0.75rem;
     padding: var(--space-sm);
 }
@@ -44,12 +53,29 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+    .currently-reading-content {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+
     .lg-book-cover {
         width: 24rem;
         height: auto;
     }
 
     .book-info {
+        font-size: 1.5rem;
+        padding: var(--space-md);
+    }
+
+    .challenge-title {
+        font-size: 2rem;
+        text-align: center;
+        padding: var(--space-sm);
+    }
+
+    .challenge-stat {
         font-size: 1.5rem;
     }
 }

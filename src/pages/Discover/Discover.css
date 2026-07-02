@@ -1,19 +1,7 @@
-/*Featured List*/
+/* Mobile */
 .featured-list-container {
     display: flex;
     flex-direction: column;
-}
-
-.featured-list-card {
-    padding: var(--space-sm);
-    gap: var(--space-md);
-    border: 0.25rem solid var(--secondary-blue);
-}
-
-.featured-list-text {
-    font-size: 0.75rem;
-    text-align: center;
-    padding: var(--space-md);
 }
 
 .featured-list-card .book-stack-cover-0 {
@@ -41,3 +29,26 @@
     display: none;
 }
 
+/* Tablet */
+@media (min-width: 768px) {
+    .featured-list-card .book-stack-cover-0 {
+        top: 0;
+        left: 12rem;
+        width: 10rem;
+        height: 16rem;
+    }
+
+    .featured-list-card .book-stack-cover-1 {
+        top: 0;
+        left: 0.5rem;
+        width: 10rem;
+        height: 16rem;
+    }
+
+    .featured-list-card .book-stack-cover-2 {
+        top: 0;
+        left: -11rem;
+        width: 10rem;
+        height: 16rem;
+    }
+}

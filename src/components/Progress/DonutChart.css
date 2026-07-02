@@ -1,8 +1,9 @@
 /* Mobile */
 
 .donut-wrapper {
-    width: 140px;
-    height: 140px;
+    display: flex;
+    padding: var(--space-sm);
+    gap: var(--space-sm);
 }
 
 .donut-chart-stat {
@@ -13,11 +14,6 @@
 
 /* Tablet */
 @media (min-width: 768px) {
-    .donut-wrapper {
-        width: 1800px;
-        height: 180px;
-    }
-
     .donut-chart-stat {
         font-size: 2rem;
     }

@@ -1,3 +1,4 @@
+/* Mobile */
 .progress-bar {
     position: relative;
     width: 100%;
@@ -23,4 +24,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .progress-bar {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .progress-stat {
+        font-size: 1.5rem;
+    }
 }

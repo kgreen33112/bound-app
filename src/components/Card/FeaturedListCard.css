@@ -1,3 +1,4 @@
+/* Mobile */
 .featured-list-card {
     display: flex;
     gap: var(--space-sm);
@@ -15,5 +16,22 @@
 .book-stack {
     display: flex;
     flex-direction: row;
-    
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .featured-list-card {
+        gap: var(--space-md);
+        height: 500px;
+    }
+
+    .featured-list-title {
+        border-bottom: 8px solid var(--secondary-blue);
+        font-size: 2rem;
+    }
+
+    .featured-list-text {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
 }

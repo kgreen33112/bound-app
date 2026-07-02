@@ -1,3 +1,5 @@
+/* Mobile */
+
 .genre-page-title {
     text-transform: capitalize;
     padding: var(--space-sm);
@@ -20,4 +22,20 @@
 .genre-page-info {
     display: flex;
     flex-direction: column;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .genre-page-title {
+        padding: var(--space-md);
+    }
+
+    .genre-book-cover {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .genre-page-info {
+        font-size: 1.5rem;
+    }
 }

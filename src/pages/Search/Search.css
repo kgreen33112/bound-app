@@ -1,3 +1,4 @@
+/* Mobile */
 .search-results {
     display: flex;
     padding: var(--space-md);
@@ -24,4 +25,22 @@
     font-size: 0.75rem;
     align-items: center;
     padding: var(--space-sm);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .explore-btn {
+        font-size: 1.25rem;
+        padding: var(--space-md);
+    }
+
+    .search-results {
+        padding: var(--space-lg);
+    }
+
+    .search-result {
+        padding: var(--space-lg);
+        gap: var(--space-xl);
+        font-size: 1.75rem;
+    }
 }
