@@ -55,7 +55,7 @@ function Home({ books, updateBookProgress }) {
                         />
                     </Link>
                     
-                    <div className="book-info">
+                    <div className="home-book-info">
                         <h3>{currentRead.title}</h3>
                         <p>{currentRead.author}</p>
                     <Link to={`/books/${currentRead.id}`}>
@@ -67,33 +67,43 @@ function Home({ books, updateBookProgress }) {
                 </div>
                 
             </Card>
-            <SectionTitle className="section-subtitle">Progress</SectionTitle>
-            <Card>
-                <div className="donut-chart-container">
-                    <DonutChart percent={progressPercent} size={140} />
+            <div className="home-main-container">
+                <div className="progress-home-container">
+                    <SectionTitle className="section-subtitle">Progress</SectionTitle>
+                    <Card className="progress-card">
+                        <div className="donut-chart-container">
+                            <DonutChart percent={progressPercent} size={140} />
+                        </div>
+                        <div className="progress-info">
+                            <span className="donut-chart-stat">{progressPercent}% read</span>
+                            <div className="progress-btn-container">
+                                <Button
+                                    className="progress-btn"
+                                    onClick={() => setIsModalOpen(true)}>
+                                        Update Progress
+                                </Button>
+                                {isModalOpen && (
+                                <UpdateProgressModal
+                                    currentPage={currentPage}
+                                    totalPages={currentRead.totalPages}
+                                    onClose={() => setIsModalOpen(false)}
+                                    onSave={handleSaveProgress}
+                                />
+                                )}
+                            </div>
+                        </div>
+                    </Card>
                 </div>
-                <span className="donut-chart-stat">{progressPercent}% read</span>
-                <div className="progress-btn-container">
-                    <Button
-                        onClick={() => setIsModalOpen(true)}>
-                            Update Progress
-                    </Button>
-                    {isModalOpen && (
-                    <UpdateProgressModal
-                        currentPage={currentPage}
-                        totalPages={currentRead.totalPages}
-                        onClose={() => setIsModalOpen(false)}
-                        onSave={handleSaveProgress}
-                    />
-                    )}
+                <div className="challenge-home-container">
+                    <SectionTitle className="section-subtitle">Reading Challenge</SectionTitle>
+                    <Card className="challenge-card">
+                        <div className="challenge-title">2026 Reading Challenge: 52 Books</div>
+                            <ProgressBar percent={challengePercent} />
+                            <p className="challenge-stat">{readBooks.length} of {challengeGoal} books read</p>
+                    </Card>
                 </div>
-            </Card>
-            <SectionTitle className="section-subtitle">Reading Challenge</SectionTitle>
-            <Card>
-                <div className="challenge-title">2026 Reading Challenge: 52 Books</div>
-                <ProgressBar percent={challengePercent} />
-                <p className="challenge-stat">{readBooks.length} of {challengeGoal} books read</p>
-            </Card>
+            </div>
+            
             <SectionTitle className="section-subtitle">Recommendations</SectionTitle>
             <div className="book-row-container">
                 {recommendationRows.map((row) => (

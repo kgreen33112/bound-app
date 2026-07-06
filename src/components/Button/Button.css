@@ -46,3 +46,27 @@
         font-size: 1.5rem;
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .primary-btn {
+        width: 12rem;
+        font-size: 1.25rem;
+        padding: var(--space-sm);
+        margin: var(--space-lg);
+    }
+
+    .progress-btn {
+        width: 8rem;
+        font-size: 0.85rem;
+    }
+    .see-more-btn {
+        width: 12rem;
+        font-size: 1.25rem;
+        gap: var(--space-lg);
+    }
+
+    .btn-icon {
+        font-size: 1.25rem;
+    }
+}

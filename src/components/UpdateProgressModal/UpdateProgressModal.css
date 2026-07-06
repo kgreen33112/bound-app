@@ -80,3 +80,21 @@
         padding: var(--space-md);
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .modal-overlay {
+        top: 0rem;
+        left: 20rem;
+        width: 50rem;
+        height: 40rem;
+    }
+
+    .progress-modal {
+        padding: var(--space-md);
+        font-size: 1.5rem;
+        gap: var(--space-sm);
+        width: 90%;
+        max-width: 400px;
+    }
+}

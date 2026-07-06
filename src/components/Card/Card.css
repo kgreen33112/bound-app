@@ -10,3 +10,26 @@
     border-radius: var(--radius-md);
     margin-bottom: var(--space-md);
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .content-card {
+        justify-self: center;
+        padding: var(--space-xs);
+        width: fit-content;
+    }
+
+    .content-card.progress-card {
+        display: flex;
+        flex-direction: row;
+        padding: var(--space-lg);
+    }
+
+    .content-card.challenge-card {
+        padding: var(--space-lg);
+    }
+
+    .content-card.shelf-card {
+        width: 18rem;
+    }
+}

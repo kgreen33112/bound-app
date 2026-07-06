@@ -12,12 +12,17 @@
     height: auto;
 }
 
-.book-info {
+.home-book-info {
     text-align: center;
     padding: var(--space-sm);
 }
 
 /*Progress*/
+.progress-home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
 
 .progress-btn-container {
     display: flex;
@@ -30,6 +35,12 @@
 }
 
 /*Reading Challenge*/
+.challenge-home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
 .challenge-stat {
     font-size: 0.75rem;
     padding: var(--space-sm);
@@ -64,9 +75,12 @@
         height: auto;
     }
 
-    .book-info {
+    .home-book-info {
+        display: flex;
+        flex-direction: column;
         font-size: 1.5rem;
         padding: var(--space-md);
+        gap: var(--space-md);
     }
 
     .challenge-title {
@@ -77,5 +91,52 @@
 
     .challenge-stat {
         font-size: 1.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .currently-reading-content {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lg-book-cover {
+        width: 12rem;
+        height: auto;
+        padding: var(--space-md);
+    }
+
+    .home-book-info {
+        font-size: 1.5rem;
+        padding: var(--space-sm);
+        gap: var(--space-lg);
+    }
+
+    .home-main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: var(--space-xl);
+    }
+
+    .progress-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .progress-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .challenge-title {
+        font-size: 1.25rem;
+        padding: var(--space-md);
+    }
+
+    .challenge-stat {
+        font-size: 1.25rem;
     }
 }

@@ -42,3 +42,21 @@
         height: 12rem;
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .book-row {
+        margin-bottom: 3rem;
+    }
+    
+    .recommendation-text {
+        font-size: 1.25rem;
+        margin-bottom: var(--space-md);
+        margin-top: var(--space-lg);
+    }    
+
+    .book-row-cover {
+        width: 8rem;
+        height: 12rem;
+    }
+}

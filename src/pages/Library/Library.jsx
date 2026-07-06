@@ -7,6 +7,7 @@ import ShelfCard from '../../components/Shelves/ShelfCard';
 import { LuCirclePlus } from 'react-icons/lu';
 import { useState } from "react";
 import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
+import { Link } from 'react-router-dom';
 
 
 function Library ({ books, updateBookProgress }) {
@@ -47,31 +48,32 @@ function Library ({ books, updateBookProgress }) {
             <main className="main-content">
                 <SectionTitle>Currently Reading:</SectionTitle>
                 <Card className="current-reading-card">
-                    <img 
-                    className="md-book-cover"
-                    src={`https://covers.openlibrary.org/b/id/${currentRead.coverId}-M.jpg`}
-                    alt={currentRead.title}
-                    />
+                    <Link key={currentRead.id} to={`/books/${currentRead.id}`}>
+                        <img 
+                            className="md-book-cover"
+                            src={`https://covers.openlibrary.org/b/id/${currentRead.coverId}-M.jpg`}
+                            alt={currentRead.title}
+                        />
+                    </Link>
                     <div className="info-container">
                         <div className="current-book-info">
                             <h3>{currentRead.title}</h3>
                             <p>{currentRead.author}</p>
                         </div>
-                        <div className="progress-container">
-                            <p>Progress:</p>
+                        <div className="progress-container">                                <p>Progress:</p>
                             <ProgressBar 
                                 className="library-progress"
                                 percent={progressPercent} />
-                             <Button
+                            <Button
                                 onClick={() => setIsModalOpen(true)}>
                                 Update Progress
                             </Button>
                             {isModalOpen && (
                                 <UpdateProgressModal
-                                currentPage={currentPage}
-                                totalPages={currentRead.totalPages}
-                                onClose={() => setIsModalOpen(false)}
-                                onSave={handleSaveProgress}
+                                    currentPage={currentPage}
+                                    totalPages={currentRead.totalPages}
+                                    onClose={() => setIsModalOpen(false)}
+                                    onSave={handleSaveProgress}
                                 />
                             )}
                         </div>
@@ -98,12 +100,11 @@ function Library ({ books, updateBookProgress }) {
                         shelfId="5-star-vault"
                         books={fiveStarVaultBooks}
                     />
-
-                    <Button className="add-shelf-btn">
-                        <LuCirclePlus />
-                        Add a Shelf
-                    </Button>
                 </div>
+                <Button className="add-shelf-btn">
+                    <LuCirclePlus />
+                    Add a Shelf
+                </Button>
             </main>
         )
 }

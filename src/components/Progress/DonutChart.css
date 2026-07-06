@@ -18,3 +18,10 @@
         font-size: 2rem;
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .donut-chart-stat {
+        font-size: 1.25rem;
+    }
+}

@@ -24,20 +24,22 @@ function Discover ({ books }) {
                     );
                 })}
             </div>
-            {featuredLists.map((list) => {
-                const listBooks = list.bookIds.map(
-                    (id) => books[id]
-                );
+            <div className="featured-list-container">
+                {featuredLists.map((list) => {
+                    const listBooks = list.bookIds.map(
+                        (id) => books[id]
+                    );
 
-                return (
-                    <FeaturedListCard
-                        key={list.id}
-                        listId={list.id}
-                        title={list.title}
-                        books={listBooks}
-                    />
-                )
-            })}
+                    return (
+                        <FeaturedListCard
+                            key={list.id}
+                            listId={list.id}
+                            title={list.title}
+                            books={listBooks}
+                        />
+                    )
+                })}
+            </div>
         </main>
     )
 }

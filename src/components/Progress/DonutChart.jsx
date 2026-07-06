@@ -16,7 +16,7 @@ function DonutChart({ percent = 25 }) {
                         <Pie
                             data={data}
                             dataKey="value"
-                            innerRadius={40}
+                            innerRadius={35}
                             outerRadius={70}
                             startAngle={90}
                             endAngle={-270}

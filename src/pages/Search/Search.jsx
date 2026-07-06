@@ -12,14 +12,18 @@ function Search() {
     
     return (
         <main className="main-content">
-            <SectionTitle>Explore Popular Genres</SectionTitle>
-            <GenreCard />
-            <div className="explore-btn-container">
-                <Button className="explore-btn">
-                    <LuSparkles />
-                    Explore All Genres
-                    </Button>
-            </div>
+            <section className="genre-section">
+                <SectionTitle>Explore Popular Genres</SectionTitle>
+                <div className="genre-feature">
+                    <GenreCard />
+                    <div className="explore-btn-container">
+                        <Button className="explore-btn">
+                            <LuSparkles />
+                            Explore All Genres
+                        </Button>
+                    </div>
+                </div>
+            </section>
             <div className="book-row-container">
                 {genreRows.map((row) => (
                     <BookRow

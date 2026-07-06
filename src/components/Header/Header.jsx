@@ -1,5 +1,5 @@
 import './Header.css';
-import { LuCirclePlus, LuLibrary, LuScanSearch } from 'react-icons/lu';
+import { LuCirclePlus, LuCompass, LuFilter, LuHouse, LuLibrary, LuScanSearch, LuSearch } from 'react-icons/lu';
 import BookA from '../../assets/images/BookA.png';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState } from "react";
@@ -15,11 +15,11 @@ function Header () {
     }
 
     return (
-        <>
+        <header className="header">
             <div className="header-top">
-                <NavLink to="/library">
-                    <LuLibrary className="header-icon" />
-                </NavLink>
+                    <NavLink to="/library">
+                        <LuLibrary className="header-icon" />
+                    </NavLink>
                 <div className="header-center">
                     <h2 className="logo-text">Bound</h2>
                     <img
@@ -31,6 +31,12 @@ function Header () {
                 <Link to="/search">
                     <LuCirclePlus className="header-icon" />
                 </Link>
+                <nav className="desktop-nav">
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/library">Library</NavLink>
+                    <NavLink to="/discover">Discover</NavLink>
+                    <NavLink to="/search">Search</NavLink>
+                </nav>
             </div>
             <div className="header-search">
                 <LuScanSearch className="search-icon" />                     
@@ -44,8 +50,9 @@ function Header () {
                         placeholder="Search books, authors, genres..."
                     />
                 </form>
+                <LuFilter className="filter-icon" />
             </div>
-        </>
+        </header>
     )
 }
 

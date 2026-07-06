@@ -62,3 +62,34 @@
         z-index: 1;
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .book-stack {
+        width: 10rem;
+        height: 12rem;
+}
+
+.book-stack-cover {
+    width: 6rem;
+    height: 10rem;
+}
+
+.book-stack-cover-0 {
+    top: 1.5rem;
+    left: 4rem;
+    z-index: 3;
+}
+
+.book-stack-cover-1 {
+    top: 0.75rem;
+    left: 2rem;
+    z-index: 2;
+}
+
+.book-stack-cover-2 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+}

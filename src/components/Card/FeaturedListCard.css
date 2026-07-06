@@ -35,3 +35,12 @@
         font-weight: 600;
     }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .featured-list-card {
+        width: 90%;
+        max-width: 900px;
+        height: fit-content;
+    }
+}

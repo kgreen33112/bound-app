@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .footer-link {
@@ -35,5 +36,21 @@
 @media (min-width: 768px) {
     .footer {
         font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .footer-link.active::after {
+        bottom: -1rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin-top: 1rem;
+        transform: translateY(-2px);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .footer {
+        display: none;
     }
 }

@@ -50,6 +50,22 @@ const featuredLists = [
         ],
         text: "Guaranteed page-turners that are loved by book clubs nationwide"
     },
+    {
+        id: "hidden-gems",
+        title: "Hidden Gems",
+        bookIds: [
+            'where-crawdads-sing',
+            'the-score',
+            'dungeon-crawler',
+            'woman-inside',
+            'hidden-pictures',
+            'none-is-true',
+            'locked-door',
+            'verity',
+            'hiding-place',
+            'dark-window',
+        ]
+    }
 ]
 
 export default featuredLists;

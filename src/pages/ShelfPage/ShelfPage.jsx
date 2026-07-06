@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import StarRating from "../../components/StarRating/StarRating";
 import "./ShelfPage.css";
+import { LuBookMarked, LuHexagon } from "react-icons/lu";
+import { useState } from "react";
 
 function ShelfPage({ books }) {
     const { shelfId } = useParams();
@@ -19,11 +21,57 @@ function ShelfPage({ books }) {
         (book) => book.status === shelfId
     );
 
+    const [sortBy, setSortBy] = useState("recently-added");
+
+    const sortedBooks = [...shelfBooks].sort((a, b) => {
+        if (sortBy === "title") {
+            return a.title.localeCompare(b.title);
+        }
+
+        if (sortBy === "author") {
+            return a.author.localeCompare(b.author);
+        }
+
+        if (sortBy === "rating") {
+            return b.rating - a.rating;
+        }
+
+        return 0;
+    });
+
     return (
         <main className="main-content">
-            <h1>{shelfTitle}</h1>
+            <div className="shelf-top-info">
+                <h1>{shelfTitle}</h1>
+                <p className="shelf-title-count">{shelfBooks.length} books</p>
+                <div className="shelf-filter-tabs">
+                    <button 
+                        className={sortBy === "recently-added" ? "sort-btn active" : "sort-btn"}
+                        onClick={() => setSortBy("recently-added")}>
+                            Recently Added
+                    </button>
+                    <LuHexagon className="spacing-icon" fill="#456481" />
+                    <button 
+                        className={sortBy === "title" ? "sort-btn active" : "sort-btn"}
+                        onClick={() => setSortBy("title")}>
+                            Title A-Z
+                    </button>
+                    <LuHexagon className="spacing-icon" fill="#456481" />
+                    <button 
+                        className={sortBy === "author" ? "sort-btn active" : "sort-btn"}
+                        onClick={() => setSortBy("author")}>
+                            Author
+                    </button>
+                    <LuHexagon className="spacing-icon" fill="#456481" />
+                    <button 
+                        className={sortBy === "rating" ? "sort-btn active" : "sort-btn"}
+                        onClick={() => setSortBy("rating")}>
+                            Rating
+                    </button>
+                </div>
+            </div>
 
-            {shelfBooks.map((book) => (
+            {sortedBooks.map((book) => (
                 <Link key={book.id} to={`/books/${book.id}`}>
                     <div key ={book.id} className="shelf-cover-card">
                         <img 
@@ -35,6 +83,13 @@ function ShelfPage({ books }) {
                             <h3>{book.title}</h3>
                             <p>{book.author}</p>
                             <StarRating size={20} rating={book.rating} />  
+                        </div>
+                        <div className="extra-book-genres">
+                            {book.genres.map((genre) => (
+                                <span key={genre} className="extra-genre-pill">
+                                {genre}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </Link>

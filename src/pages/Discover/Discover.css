@@ -1,8 +1,4 @@
 /* Mobile */
-.featured-list-container {
-    display: flex;
-    flex-direction: column;
-}
 
 .featured-list-card .book-stack-cover-0 {
     top: 0;
@@ -31,6 +27,7 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+
     .featured-list-card .book-stack-cover-0 {
         top: 0;
         left: 12rem;
@@ -50,5 +47,35 @@
         left: -11rem;
         width: 10rem;
         height: 16rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .featured-list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+
+    .featured-list-card .book-stack-cover-0 {
+        top: 0;
+        left: 10rem;
+        width: 6rem;
+        height: 10rem;
+    }
+
+    .featured-list-card .book-stack-cover-1 {
+        top: 0;
+        left: 1.75rem;
+        width: 6rem;
+        height: 10rem;
+    }
+
+    .featured-list-card .book-stack-cover-2 {
+        top: 0;
+        left: -6rem;
+        width: 6rem;
+        height: 10rem;
     }
 }

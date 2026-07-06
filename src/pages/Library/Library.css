@@ -6,7 +6,7 @@
     padding: var(--space-sm);
     box-shadow: var(--shadow-md);
     border-radius: var(--radius-md);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 .md-book-cover {
@@ -95,5 +95,41 @@
         font-size: 1.5rem;
         width: 16rem;
         margin-top: 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .current-reading-card {
+
+        width: 100%;
+        max-width: 900px;
+        margin: var(--space-lg) auto;
+        gap: var(--space-lg);
+    }
+
+    .md-book-cover {
+        width: 12rem;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .current-book-info {
+        font-size: 1.5rem;
+        padding-left: var(--space-lg);
+        flex: 1;
+    }
+
+    .progress-container {
+        gap: var(--space-lg);
+        padding: var(--space-lg);
+    }
+
+    .progress-container p {
+        font-size: 1.5rem;
+    }
+
+    .library-progress {
+        width: 30rem;
     }
 }

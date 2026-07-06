@@ -45,6 +45,12 @@
     font-weight: 600;
 }
 
+.book-extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
 .summary-card {
     padding: var(--space-md); 
     gap: var(--space-md);
@@ -131,6 +137,13 @@
         flex-direction: row;
         align-items: center;
         gap: 2rem;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .lg-book-cover {
+        width: 15rem;
+        height: auto;
     }
 
     .main-book-details {
@@ -170,7 +183,7 @@
     }
 
     .metadata-card {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .meta-label {
@@ -179,5 +192,27 @@
 
     .meta-value {
         flex: 1;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .book-extra-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        gap: var(--space-lg);
+    }
+
+    .summary-card {
+        padding: var(--space-sm);
+    }
+
+    .metadata-card {
+        margin-left: 0;
+    }
+
+    .metadata-card {
+        font-size: 1rem;
     }
 }

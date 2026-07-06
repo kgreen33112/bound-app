@@ -58,10 +58,37 @@ function BookDetails({ books, updateBookStatus }) {
                     </span>
                 ))}
             </div>
-            <Card className="summary-card">
-                <h3>Summary</h3>
-                <p>{book.summary}</p>
-            </Card>
+            <div className="book-extra-info">
+                <Card className="summary-card">
+                    <h3>Summary</h3>
+                    <p>{book.summary}</p>
+                </Card>
+
+                <Card className="metadata-card">
+                    <h2>More Information:</h2>
+                    <div className="metadata-row">
+                        <span className="meta-label">Number of Pages:</span>
+                        <span className="meta-value">{book.totalPages}</span>
+                    </div>
+                    <div className="metadata-row">
+                        <span className="meta-label">Published in</span>
+                        <span className="meta-value">{book.year_published}</span>
+                    </div>
+                    <div className="metadata-row">
+                        <span className="meta-label">Literary Awards:</span>
+                        <div className="meta-value awards-value">
+                            {book.literary_awards.map((award) => (
+                            <span className="award-item" key={award}>
+                                {award}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="metadata-row">
+                        <span className="meta-label">Series:</span>
+                        <span className="meta-value">{book.series || "Standalone"}</span>  
+                    </div>
+                </Card>
+            </div>
             <Card className="review-card">
                 <h3>Reviews</h3>
                 {Object.values(book.reviews || {}).map((review) => (
@@ -77,30 +104,6 @@ function BookDetails({ books, updateBookStatus }) {
                         </div>
                     </div>
                 ))}
-            </Card>
-            <Card className="metadata-card">
-                <h2>More Information:</h2>
-                <div className="metadata-row">
-                    <span className="meta-label">Number of Pages:</span>
-                    <span className="meta-value">{book.totalPages}</span>
-                </div>
-                <div className="metadata-row">
-                    <span className="meta-label">Published in</span>
-                    <span className="meta-value">{book.year_published}</span>
-                </div>
-                <div className="metadata-row">
-                    <span className="meta-label">Literary Awards:</span>
-                    <div className="meta-value awards-value">
-                        {book.literary_awards.map((award) => (
-                        <span className="award-item" key={award}>
-                            {award}</span>
-                        ))}
-                    </div>
-                </div>
-                <div className="metadata-row">
-                    <span className="meta-label">Series:</span>
-                    <span className="meta-value">{book.series || "Standalone"}</span>  
-                </div>
             </Card>
         </main>
     )
