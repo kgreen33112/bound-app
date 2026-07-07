@@ -48,6 +48,11 @@ function App() {
   }
 
   const initialShelves = [
+    {
+      id: "currently-reading",
+      title: "Currently Reading",
+      canDelete: false,
+    },
     { 
       id: "want-to-read", 
       title: "Want to Read",
@@ -69,7 +74,15 @@ function App() {
       canDelete: false, },
   ];
 
-  const [shelves, setShelves] = useState(initialShelves);
+  const [shelves, setShelves] = useState(() => {
+    const savedShelves = localStorage.getItem("shelves");
+
+    return savedShelves ? JSON.parse(savedShelves) : initialShelves;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("shelves", JSON.stringify(shelves));
+  }, [shelves]);
 
   function addShelf(title) {
     const newShelf = {
@@ -100,6 +113,16 @@ function App() {
 
       return updatedBooks;
     });
+  }
+
+  function updateBookRating(bookId, newRating) {
+    setBooksData((prevBooks) => ({
+      ...prevBooks,
+      [bookId]: {
+        ...prevBooks[bookId],
+        rating: newRating,
+      },
+    }));
   }
   
   return (
@@ -143,6 +166,7 @@ function App() {
                 books={booksData}
                 shelves={shelves}
                 updateBookStatus={updateBookStatus}
+                updateBookRating={updateBookRating}
               />
             } 
           />

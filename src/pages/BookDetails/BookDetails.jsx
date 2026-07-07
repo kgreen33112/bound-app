@@ -7,7 +7,7 @@ import StarRating from "../../components/StarRating/StarRating";
 import fallbackCover2 from '../../assets/images/fallbackCover2.png';
 import { LuBookmark } from "react-icons/lu";
 
-function BookDetails({ books, shelves, updateBookStatus }) {
+function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
     const { bookId } = useParams();
     const book = books[bookId];
 
@@ -31,7 +31,11 @@ function BookDetails({ books, shelves, updateBookStatus }) {
                         <h3>{book.title}</h3>
                         <p>{book.author}</p>
                     </div>
-                    <StarRating size={24} rating={book.rating} />
+                    <StarRating 
+                        size={24} 
+                        rating={book.rating} 
+                        onRate={(newRating) => updateBookRating(book.id, newRating)}
+                    />
                 
                     <label className="status-selector-label" htmlFor="book-status"></label>
 
