@@ -7,7 +7,7 @@ import StarRating from "../../components/StarRating/StarRating";
 import fallbackCover2 from '../../assets/images/fallbackCover2.png';
 import { LuBookmark } from "react-icons/lu";
 
-function BookDetails({ books, updateBookStatus }) {
+function BookDetails({ books, shelves, updateBookStatus }) {
     const { bookId } = useParams();
     const book = books[bookId];
 
@@ -42,12 +42,12 @@ function BookDetails({ books, updateBookStatus }) {
                         onChange={(e) => updateBookStatus(book.id, e.target.value)}
                     >
                         <option value="none">Not in your library</option>
-                        <option value="currently-reading">Currently Reading</option>
-                        <option value="want-to-read">Want to Read</option>
-                        <option value="read">Read</option>
-                        <option value="comfort-reads">Comfort Reads</option>
-                        <option value="5-star-vault">5-Star Vault</option>
-                        <option value="collections">Collections</option>
+                        
+                        {shelves.map((shelf) => (
+                            <option key={shelf.id} value={shelf.id}>
+                                {shelf.title}
+                            </option>
+                        ))}
                     </select>
                 </div>
             </Card>

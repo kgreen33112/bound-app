@@ -1,0 +1,50 @@
+/* Mobile */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 25rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    margin-left: -0.85rem;
+}
+
+.add-shelf-modal {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    gap: var(--space-sm);
+    width: 90%;
+    max-width: 320px;
+    box-shadow: var(--shadow-md);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    gap: var(--space-md);
+}
+
+.cancel-btn {
+    background: var(--clr-background);
+    color: var(--text);
+    border: 1px solid var(--secondary-blue);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+}
+
+.save-btn {
+    background: var(--primary-blue);
+    color: white;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+}

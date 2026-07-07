@@ -46,6 +46,61 @@ function App() {
       },
     }));
   }
+
+  const initialShelves = [
+    { 
+      id: "want-to-read", 
+      title: "Want to Read",
+      canDelete: false, 
+    },
+    { 
+      id: "read", 
+      title: "Read",
+      canDelete: false, 
+    },
+    { 
+      id: "comfort-reads", 
+      title: "Comfort Reads", 
+      canDelete: false,
+    },
+    { 
+      id: "5-star-vault", 
+      title: "5-Star Vault",
+      canDelete: false, },
+  ];
+
+  const [shelves, setShelves] = useState(initialShelves);
+
+  function addShelf(title) {
+    const newShelf = {
+        id: title.toLowerCase().replaceAll(" ", "-"),
+        title,
+        canDelete: true,
+    };
+
+    setShelves((prevShelves) => [...prevShelves, newShelf]);
+  }
+
+  function deleteShelf(shelfId) {
+    setShelves((prevShelves) =>
+    prevShelves.filter((shelf) => shelf.id !== shelfId)
+    );
+
+    setBooksData((prevBooks) => {
+      const updatedBooks = { ...prevBooks };
+
+      Object.keys(updatedBooks).forEach((bookId) => {
+        if (updatedBooks[bookId].status === shelfId) {
+          updatedBooks[bookId] = {
+            ...updatedBooks[bookId],
+            status: "none",
+          };
+        }
+      });
+
+      return updatedBooks;
+    });
+  }
   
   return (
     <div className="app">
@@ -66,6 +121,9 @@ function App() {
               <Library 
                 books={booksData}
                 updateBookProgress={updateBookProgress}
+                shelves={shelves}
+                addShelf={addShelf}
+                deleteShelf={deleteShelf}
             />} />
           <Route 
             path='/discover' 
@@ -83,6 +141,7 @@ function App() {
             element={
               <BookDetails 
                 books={booksData}
+                shelves={shelves}
                 updateBookStatus={updateBookStatus}
               />
             } 

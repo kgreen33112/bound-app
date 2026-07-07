@@ -8,9 +8,10 @@ import { LuCirclePlus } from 'react-icons/lu';
 import { useState } from "react";
 import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
 import { Link } from 'react-router-dom';
+import AddShelfModal from '../../components/AddShelfModal/AddShelfModal';
 
 
-function Library ({ books, updateBookProgress }) {
+function Library ({ books, updateBookProgress, shelves, addShelf, deleteShelf, canDelete }) {
         const currentRead = books["theo-of-golden"];
         const currentPage = currentRead.currentPage || 0;
         const progressPercent = Math.round((currentPage / currentRead.totalPages) * 100);
@@ -43,6 +44,8 @@ function Library ({ books, updateBookProgress }) {
         function handleSaveProgress(newPage) {
             updateBookProgress(currentRead.id, newPage);
         }
+
+        const [isAddShelfOpen, setIsAddShelfOpen] = useState(false);
 
         return (
             <main className="main-content">
@@ -79,32 +82,37 @@ function Library ({ books, updateBookProgress }) {
                         </div>
                     </div>
                 </Card>
+                
                 <div className="shelf-container">
-                    <ShelfCard
-                        title="Want to Read"
-                        shelfId="want-to-read"
-                        books={wantToReadBooks}
-                    />
-                    <ShelfCard
-                        title="Read"
-                        shelfId="read"
-                        books={readBooks}
-                    />
-                    <ShelfCard
-                        title="Comfort Reads"
-                        shelfId="comfort-reads"
-                        books={comfortReadBooks}
-                    />
-                    <ShelfCard
-                        title="5-Star Vault"
-                        shelfId="5-star-vault"
-                        books={fiveStarVaultBooks}
-                    />
+                    {shelves.map((shelf) => {
+                        const shelfBooks = Object.values(books).filter(
+                            (book) => book.status === shelf.id
+                        );
+
+                        return (
+                            <ShelfCard
+                                key={shelf.id}
+                                title={shelf.title}
+                                shelfId={shelf.id}
+                                canDelete={shelf.canDelete}
+                                books={shelfBooks}
+                                onDelete={deleteShelf}
+                            />
+                        );
+                    })}
                 </div>
-                <Button className="add-shelf-btn">
+                <Button 
+                    className="add-shelf-btn"
+                    onClick={() => setIsAddShelfOpen(true)}>
                     <LuCirclePlus />
                     Add a Shelf
                 </Button>
+                {isAddShelfOpen && (
+                    <AddShelfModal
+                        onClose={() => setIsAddShelfOpen(false)}
+                        onSave={addShelf}
+                    />
+                )}
             </main>
         )
 }

@@ -16,7 +16,8 @@ function SearchResults({ books }) {
             {query && <p>Results for "{query}"</p>}
 
             <div className="search-results">
-                {searchResults.map((book) => (
+                {searchResults.length > 0 ? (
+                    searchResults.map((book) => (
                     <Link
                         key={book.id}
                         to={`/books/${book.id}`}
@@ -31,9 +32,18 @@ function SearchResults({ books }) {
                             <p>{book.author}</p>
                         </div>
                     </Link>
-                ))}
-            </div>
-        </main>
+                ))
+            ) : (
+                query && (
+                    <div className="empty-state">
+                        <h2>No books found</h2>
+                        <p>We couldn't find any books matching "{query}".</p>
+                        <p>Check the spelling or try a different title or author.</p>
+                    </div>
+                )
+            )}
+        </div>
+    </main>
     )
 }
 
