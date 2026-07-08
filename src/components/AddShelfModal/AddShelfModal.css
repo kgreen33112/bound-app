@@ -2,7 +2,7 @@
 .modal-overlay {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 1.25rem;
     width: 25rem;
     height: 25rem;
     background: rgba(0, 0, 0, 0.4);
@@ -47,4 +47,31 @@
     color: white;
     padding: var(--space-sm);
     border-radius: var(--radius-md);
+}
+
+/* Tablet */
+@media(min-width: 768px) {
+    .modal-overlay {
+        top: 0;
+        left: 1.5rem;
+        width: 50rem;
+        height: 50rem;
+        margin-left: -0.85rem;
+    }
+
+    .add-shelf-modal {
+        font-size: 1.5rem;
+        gap: var(--space-sm);
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+/* Desktop */
+@media(min-width: 1024px) {
+    .modal-overlay {
+        left: 25rem;
+        width: 50rem;
+        height: 50rem;
+    }
 }

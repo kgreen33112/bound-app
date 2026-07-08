@@ -32,10 +32,10 @@ function Header () {
                     <LuCirclePlus className="header-icon" />
                 </Link>
                 <nav className="desktop-nav">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/library">Library</NavLink>
-                    <NavLink to="/discover">Discover</NavLink>
-                    <NavLink to="/search">Search</NavLink>
+                    <NavLink to="/" className="nav-item">Home</NavLink>
+                    <NavLink to="/library" className="nav-item">Library</NavLink>
+                    <NavLink to="/discover" className="nav-item">Discover</NavLink>
+                    <NavLink to="/search" className="nav-item">Search</NavLink>
                 </nav>
             </div>
             <div className="header-search">

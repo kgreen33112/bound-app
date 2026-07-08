@@ -54,12 +54,18 @@
         font-size: 1.25rem;
         padding: var(--space-sm);
         margin: var(--space-lg);
+        transition: transform 0.2s ease;
+    }
+
+    .primary-btn:hover {
+        transform: translateY(-5px);
     }
 
     .progress-btn {
         width: 8rem;
         font-size: 0.85rem;
     }
+    
     .see-more-btn {
         width: 12rem;
         font-size: 1.25rem;

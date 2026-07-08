@@ -130,6 +130,14 @@
         gap: 4rem;
     }
 
+    .nav-item {
+        transition: transform 0.2s ease;
+    }
+
+    .nav-item:hover {
+        transform: scale(1.1);
+    }
+
      .header-search {
         width: 100%;
         font-size: 1.5rem;
@@ -139,6 +147,11 @@
 
     .search-icon {
        font-size: 3rem;
+       transition: transform 0.2s ease;
+    }
+
+    .search-icon:hover {
+        transform: translateY(-5px);
     }
 
     .search-bar {
@@ -149,5 +162,10 @@
     .filter-icon {
         display: block;
         font-size: 3rem;
+        transition: transform 0.2s ease;
+    }
+
+    .filter-icon:hover {
+        transform: translateY(-5px);
     }
 }

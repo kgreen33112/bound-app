@@ -42,5 +42,10 @@
         width: 90%;
         max-width: 900px;
         height: fit-content;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .featured-list-card:hover {
+        transform: translateY(-10px);
     }
 }
