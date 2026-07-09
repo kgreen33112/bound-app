@@ -1,19 +1,19 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home.jsx';
+import { books as initialBooks } from "./assets/data/books.js";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer.jsx';
+import ScrollToTop from './components/Helpers/ScrollToTop.jsx';
+import Home from './pages/Home/Home.jsx';
 import Library from './pages/Library/Library.jsx';
 import Discover from './pages/Discover/Discover.jsx';
 import Search from './pages/Search/Search.jsx';
 import BookDetails from './pages/BookDetails/BookDetails.jsx';
-import { useState, useEffect } from "react";
-import { books as initialBooks } from "./assets/data/books.js";
-import ScrollToTop from './components/Helpers/ScrollToTop.jsx';
 import ShelfPage from './pages/ShelfPage/ShelfPage.jsx'
 import SearchResults from './pages/Search/SearchResults.jsx';
 import GenrePage from './pages/GenrePage/GenrePage.jsx';
 import FeaturedListPage from './pages/FeaturedListPage/FeaturedListPage.jsx';
+import { Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from "react";
 
 function App() {
   const [booksData, setBooksData] = useState(() => {

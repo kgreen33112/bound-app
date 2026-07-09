@@ -1,5 +1,5 @@
-import Card from './Card';
 import './GenreCard.css';
+import Card from './Card';
 import { Link } from "react-router-dom";
 
 function GenreCard() {

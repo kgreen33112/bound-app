@@ -1,15 +1,15 @@
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './Library.css';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import ProgressBar from '../../components/Progress/ProgressBar';
 import ShelfCard from '../../components/Shelves/ShelfCard';
+import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
+import AddShelfModal from '../../components/AddShelfModal/AddShelfModal';
+import PageTitle from '../../components/PageTitle';
 import { LuCirclePlus } from 'react-icons/lu';
 import { useState } from "react";
-import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
 import { Link } from 'react-router-dom';
-import AddShelfModal from '../../components/AddShelfModal/AddShelfModal';
-
 
 function Library ({ books, updateBookProgress, shelves, addShelf, deleteShelf, canDelete }) {
         const currentRead = books["theo-of-golden"];
@@ -19,28 +19,6 @@ function Library ({ books, updateBookProgress, shelves, addShelf, deleteShelf, c
 
         const allBooks = Object.values(books);
 
-        const currentlyReadingBooks = allBooks.filter(
-            (book) => book.status === "currently-reading"
-        );
-
-        const wantToReadBooks = allBooks.filter(
-            (book) => book.status === "want-to-read"
-        );
-
-        const readBooks = allBooks.filter(
-            (book) => book.status === "read"
-        );
-
-        const comfortReadBooks = allBooks.filter(
-            (book) => book.status === "comfort-reads"
-        );
-
-        const fiveStarVaultBooks = allBooks.filter(
-            (book) => book.status === "5-star-vault"
-        );
-
-        
-        //modal save
         function handleSaveProgress(newPage) {
             updateBookProgress(currentRead.id, newPage);
         }
@@ -49,6 +27,7 @@ function Library ({ books, updateBookProgress, shelves, addShelf, deleteShelf, c
 
         return (
             <main className="main-content">
+                <PageTitle>Library</PageTitle>
                 <SectionTitle>Currently Reading:</SectionTitle>
                 <Card className="current-reading-card">
                     <Link key={currentRead.id} to={`/books/${currentRead.id}`}>

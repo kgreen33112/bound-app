@@ -6,6 +6,14 @@
     height: 250px;
 }
 
+.featured-list-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 .featured-list-title {
     border-bottom: 4px solid var(--secondary-blue);
     display: inline-block;

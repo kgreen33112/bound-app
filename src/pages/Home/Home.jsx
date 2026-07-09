@@ -1,18 +1,20 @@
 
 import './Home.css';
 import TheoOfGolden from '../../assets/images/TheoOfGolden.png'
+import  { books } from '../../assets/data/books';
+import { recommendationRows } from '../../assets/data/recommendationRows';
 import DonutChart from '../../components/Progress/DonutChart';
 import Button from '../../components/Button/Button';
 import ProgressBar from '../../components/Progress/ProgressBar';
 import Card from '../../components/Card/Card';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import { LuSparkles } from 'react-icons/lu';
 import BookRow from '../../components/Books/BookRow';
-import  { books } from '../../assets/data/books';
-import { recommendationRows } from '../../assets/data/recommendationRows';
+import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
+import PageTitle from '../../components/PageTitle';
+import { LuSparkles } from 'react-icons/lu';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import UpdateProgressModal from '../../components/UpdateProgressModal/UpdateProgressModal';
+
 
 function Home({ books, updateBookProgress }) {
     
@@ -37,10 +39,9 @@ function Home({ books, updateBookProgress }) {
         updateBookProgress(currentRead.id, newPage);
     }
 
-    
-
     return (
         <main className="main-content">
+            <PageTitle>Home</PageTitle>
             <SectionTitle>Currently Reading</SectionTitle>
             <Card>
                 <div className="currently-reading-content">

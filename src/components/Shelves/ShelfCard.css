@@ -5,6 +5,14 @@
     border: 1px solid rgba(69, 100, 129, 0.08);
 }
 
+.shelf-card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 .shelf-title {
     border-bottom: 4px solid var(--secondary-blue);
     display: inline-block;

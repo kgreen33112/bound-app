@@ -1,4 +1,5 @@
 import './BookStack.css';
+import fallbackCover1 from '../../assets/images/fallbackCover1.png';
 
 function BookStack({ books }) {
     return (
@@ -9,6 +10,9 @@ function BookStack({ books }) {
                     className={`book-stack-cover book-stack-cover-${index}`}
                     src={`https://covers.openlibrary.org/b/id/${book.coverId}-M.jpg`}
                     alt={book.title}
+                    onError={(e) => {
+                        e.currentTarget.src = fallbackCover1;
+                    }}
                 />
             ))}
         </div>

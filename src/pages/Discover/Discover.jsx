@@ -1,15 +1,17 @@
+import './Discover.css';
 import { discoverRows } from '../../assets/data/discoverRows';
 import { books } from '../../assets/data/books';
+import featuredLists from '../../assets/data/featuredLists';
 import BookRow from '../../components/Books/BookRow';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import './Discover.css';
 import FeaturedListCard from '../../components/Card/FeaturedListCard';
-import featuredLists from '../../assets/data/featuredLists';
+import PageTitle from '../../components/PageTitle';
 
 function Discover ({ books }) {
     
     return (
         <main className="main-content">
+            <PageTitle>Discover</PageTitle>
             <SectionTitle>Discover</SectionTitle>
             
             <div className="book-row-container">

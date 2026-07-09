@@ -1,19 +1,21 @@
-import { useNavigate } from 'react-router-dom'
 import './FeaturedListCard.css'
 import Card from './Card';
 import BookStack from '../Books/BookStack';
+import { Link } from 'react-router-dom';
 
 function FeaturedListCard({ listId, title, books }) {
-    const navigate = useNavigate();
 
     return (
-        <Card
-            className="featured-list-card"
-            onClick={() => navigate(`/featured/${listId}`)}>
+        <Card className="featured-list-card">
+            <Link 
+                to={`/featured/${listId}`}
+                className="featured-list-link"
+            >
                 <h3 className="featured-list-title">{title}</h3>
                 <p className="featured-list-text">{books.length}</p>
                 <BookStack books={books} />
-            </Card>
+            </Link>
+        </Card>
     )
 }
 

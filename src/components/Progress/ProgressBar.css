@@ -19,7 +19,7 @@
 
 .progress-stat {
     font-size: 0.75rem;
-    color: white;
+    color: var(--text);
     position: absolute;
     left: 50%;
     top: 50%;

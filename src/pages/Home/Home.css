@@ -30,10 +30,6 @@
     align-self: center;
 }
 
-.donut-chart-container {
-    display: flex;
-}
-
 /*Reading Challenge*/
 .challenge-home-container {
     display: flex;

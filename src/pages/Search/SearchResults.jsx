@@ -1,3 +1,4 @@
+import PageTitle from '../../components/PageTitle';
 import './Search.css';
 import { Link, useSearchParams } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function SearchResults({ books }) {
 
     return (
         <main className="main-content">
+            <PageTitle>Search Results</PageTitle>
             {query && <p>Results for "{query}"</p>}
 
             <div className="search-results">
@@ -28,7 +30,7 @@ function SearchResults({ books }) {
                             alt={book.title}
                         />
                            <div>
-                            <h3>{book.title}</h3>
+                            <h2>{book.title}</h2>
                             <p>{book.author}</p>
                         </div>
                     </Link>

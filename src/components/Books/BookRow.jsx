@@ -1,6 +1,6 @@
 import './BookRow.css';
-import { Link } from "react-router-dom";
 import fallbackCover1 from '../../assets/images/fallbackCover1.png';
+import { Link } from "react-router-dom";
 
 function BookRow({ title, books }) {
     return (

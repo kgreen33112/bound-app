@@ -1,4 +1,6 @@
 /* Mobile */
+
+
 .main-book-card {
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
 .genre-pill {
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
-    background: var(--secondary-blue);
+    background: var(--secondary-teal);
     color: var(--primary-blue);
     font-size: 0.8rem;
     font-weight: 600;

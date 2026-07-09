@@ -1,5 +1,5 @@
-import { useState } from "react";
 import './AddShelfModal.css';
+import { useState } from "react";
 
 function AddShelfModal({ onClose, onSave }) {
     const [shelfName, setShelfName] = useState("");
@@ -14,9 +14,14 @@ function AddShelfModal({ onClose, onSave }) {
     }
 
     return (
-        <div className="modal-overlay">
+        <div 
+            className="modal-overlay" 
+            role="dialog" 
+            aria-model="true"
+            aria-labelledby="add-shelf-title"
+        >
             <form className="add-shelf-modal" onSubmit={handleSubmit}>
-                <h2>Add a Shelf</h2>
+                <h2 id="add-shelf-title">Add a Shelf</h2>
 
                 <label htmlFor="shelf-name">Shelf Name:</label>
                 <input

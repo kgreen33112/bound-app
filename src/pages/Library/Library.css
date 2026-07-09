@@ -44,10 +44,6 @@
     font-size: 0.85rem;
 }
 
-.update-progress-btn {
-    margin: var(--space-md);
-}
-
 /*Shelves*/
 .shelf-container {
     display: grid;

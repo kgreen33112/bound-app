@@ -80,3 +80,11 @@ body {
 #root {
     min-height: 100vh;
 }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--primary-blue);
+    outline-offset: 3px;
+}

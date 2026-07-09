@@ -1,5 +1,5 @@
-import { LuStar } from "react-icons/lu";
 import './StarRating.css';
+import { LuStar } from "react-icons/lu";
 
 function StarRating({ rating, onRate, size=16 }) {
     const isInteractive = Boolean(onRate);
@@ -11,6 +11,7 @@ function StarRating({ rating, onRate, size=16 }) {
                     key={star}
                     type="button"
                     className="star-btn"
+                    aria-label={`Rate this book ${star} out of 5 stars`}
                     disabled={!isInteractive}
                     onClick={() => onRate?.(star)}
                 >
@@ -18,6 +19,7 @@ function StarRating({ rating, onRate, size=16 }) {
                         size={size}
                         className={star <= rating ? "star-filled" : "star"}
                         fill={star <= rating ? "currentColor" : "none"}
+                        aria-hidden="true"
                     />
                 </button>
             ))}

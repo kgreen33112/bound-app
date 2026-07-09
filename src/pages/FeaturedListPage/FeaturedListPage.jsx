@@ -1,7 +1,8 @@
-import { useParams, Link } from "react-router-dom";
-import StarRating from "../../components/StarRating/StarRating";
 import './FeaturedListPage.css';
 import featuredLists from "../../assets/data/featuredLists";
+import StarRating from "../../components/StarRating/StarRating";
+import { useParams, Link } from "react-router-dom";
+
 
 function FeaturedListPage({ books }) {
     const { listId } = useParams();
@@ -28,7 +29,7 @@ function FeaturedListPage({ books }) {
                             alt={book.title}
                         />
                         <div className="list-book-info">
-                            <h3>{book.title}</h3>
+                            <h2>{book.title}</h2>
                             <p>{book.author}</p>
                             <StarRating size={16} rating={book.rating} />
                         </div>

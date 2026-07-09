@@ -1,5 +1,5 @@
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import './DonutChart.css';
+import { PieChart, Pie, Cell } from "recharts";
 
 function DonutChart({ percent = 25 }) {
     const data = [

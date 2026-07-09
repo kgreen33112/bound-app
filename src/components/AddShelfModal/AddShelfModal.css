@@ -50,7 +50,7 @@
 }
 
 /* Tablet */
-@media(min-width: 768px) {
+@media (min-width: 768px) {
     .modal-overlay {
         top: 0;
         left: 1.5rem;

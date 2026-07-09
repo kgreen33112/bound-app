@@ -1,17 +1,18 @@
+import './Search.css';
+import { genreRows } from '../../assets/data/genreRows';
+import { books } from '../../assets/data/books';
 import GenreCard from '../../components/Card/GenreCard';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Button from '../../components/Button/Button';
 import BookRow from '../../components/Books/BookRow';
-import './Search.css';
+import PageTitle from '../../components/PageTitle';
 import { LuSparkles } from 'react-icons/lu';
-import { genreRows } from '../../assets/data/genreRows';
-import { books } from '../../assets/data/books';
-import { Link, useSearchParams } from "react-router-dom";
 
 function Search() {
     
     return (
         <main className="main-content">
+            <PageTitle>Search</PageTitle>
             <section className="genre-section">
                 <SectionTitle>Explore Popular Genres</SectionTitle>
                 <div className="genre-feature">

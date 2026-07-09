@@ -1,7 +1,7 @@
-import { useParams, Link } from "react-router-dom";
-import StarRating from "../../components/StarRating/StarRating";
 import "./ShelfPage.css";
-import { LuBookMarked, LuHexagon } from "react-icons/lu";
+import StarRating from "../../components/StarRating/StarRating";
+import { LuHexagon } from "react-icons/lu";
+import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 
 function ShelfPage({ books }) {
@@ -80,7 +80,7 @@ function ShelfPage({ books }) {
                             alt={book.title}
                         />
                         <div className="shelf-book-info">
-                            <h3>{book.title}</h3>
+                            <h2>{book.title}</h2>
                             <p>{book.author}</p>
                             <StarRating size={20} rating={book.rating} />  
                         </div>

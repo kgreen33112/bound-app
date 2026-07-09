@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./UpdateProgressModal.css";
+import { useState } from "react";
 
 function UpdateProgressModal({ currentPage, totalPages, onClose, onSave }) {
     const [pageInput, setPageInput] = useState(currentPage);
@@ -18,9 +18,14 @@ function UpdateProgressModal({ currentPage, totalPages, onClose, onSave }) {
     }
 
     return (
-        <div className="modal-overlay">
+        <div 
+            className="modal-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="update-progress"
+        >
             <form className="progress-modal" onSubmit={handleSubmit}>
-                <h2>Update Progress</h2>
+                <h2 id="update-progress">Update Progress</h2>
                 <label htmlFor="current-page">Current Page</label>
 
                 <input

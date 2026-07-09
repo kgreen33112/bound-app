@@ -24,6 +24,10 @@
     flex-direction: column;
 }
 
+.genre-page-info h2 {
+    font-size: 1.25rem;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
     .genre-page-title {

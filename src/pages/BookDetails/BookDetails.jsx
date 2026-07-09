@@ -1,11 +1,9 @@
-import { useParams } from "react-router-dom";
-import { books } from '../../assets/data/books';
-import Card from '../../components/Card/Card';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './BookDetails.css';
-import StarRating from "../../components/StarRating/StarRating";
+import { books } from '../../assets/data/books';
 import fallbackCover2 from '../../assets/images/fallbackCover2.png';
-import { LuBookmark } from "react-icons/lu";
+import Card from '../../components/Card/Card';
+import StarRating from "../../components/StarRating/StarRating";
+import { useParams } from "react-router-dom";
 
 function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
     const { bookId } = useParams();
@@ -28,7 +26,7 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
                 />
                 <div className="main-book-details">
                     <div className="book-info">
-                        <h3>{book.title}</h3>
+                        <h1>{book.title}</h1>
                         <p>{book.author}</p>
                     </div>
                     <StarRating 
@@ -37,7 +35,9 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
                         onRate={(newRating) => updateBookRating(book.id, newRating)}
                     />
                 
-                    <label className="status-selector-label" htmlFor="book-status"></label>
+                    <label 
+                        className="sr-only" 
+                        htmlFor="book-status">Shelf Status</label>
 
                     <select
                         className="status-selector"
@@ -64,7 +64,7 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
             </div>
             <div className="book-extra-info">
                 <Card className="summary-card">
-                    <h3>Summary</h3>
+                    <h2>Summary</h2>
                     <p>{book.summary}</p>
                 </Card>
 
@@ -94,7 +94,7 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
                 </Card>
             </div>
             <Card className="review-card">
-                <h3>Reviews</h3>
+                <h2>Reviews</h2>
                 {Object.values(book.reviews || {}).map((review) => (
                     <div className="single-review" key={review.id || review.name}>
                         <span className="review-avatar">
@@ -103,7 +103,11 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
 
                         <div className="review-content">
                             <h4>{review.name}</h4>
-                            <StarRating rating={review.review_rating} size="16" />
+                            <StarRating 
+                                rating={review.review_rating} 
+                                size="16" 
+                                aria-label={`${review.review_rating} out of 5 stars`}
+                            />
                             <p>{review.text}</p>
                         </div>
                     </div>

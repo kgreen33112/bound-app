@@ -1,6 +1,6 @@
 import './Header.css';
-import { LuCirclePlus, LuCompass, LuFilter, LuHouse, LuLibrary, LuScanSearch, LuSearch } from 'react-icons/lu';
 import BookA from '../../assets/images/BookA.png';
+import { LuCirclePlus, LuFilter, LuLibrary, LuScanSearch } from 'react-icons/lu';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState } from "react";
 
@@ -17,7 +17,10 @@ function Header () {
     return (
         <header className="header">
             <div className="header-top">
-                    <NavLink to="/library">
+                    <NavLink 
+                        to="/library"
+                        aria-label="Library"
+                    >
                         <LuLibrary className="header-icon" />
                     </NavLink>
                 <div className="header-center">
@@ -28,29 +31,60 @@ function Header () {
                         alt="Bound Logo"
                     />
                 </div>
-                <Link to="/search">
+                <Link 
+                    to="/search"
+                    aria-label="Search"
+                >
                     <LuCirclePlus className="header-icon" />
                 </Link>
                 <nav className="desktop-nav">
-                    <NavLink to="/" className="nav-item">Home</NavLink>
-                    <NavLink to="/library" className="nav-item">Library</NavLink>
-                    <NavLink to="/discover" className="nav-item">Discover</NavLink>
-                    <NavLink to="/search" className="nav-item">Search</NavLink>
+                    <NavLink 
+                        to="/" 
+                        className="nav-item"
+                        aria-label="Home"
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink 
+                        to="/library" 
+                        className="nav-item"
+                        aria-label="Library"
+                    >
+                        Library
+                    </NavLink>
+                    <NavLink 
+                        to="/discover" 
+                        className="nav-item"
+                        aria-label="Discover"
+                    >
+                        Discover
+                    </NavLink>
+                    <NavLink 
+                        to="/search" 
+                        className="nav-item"
+                        aria-label="Search"
+                    >
+                        Search
+                    </NavLink>
                 </nav>
             </div>
             <div className="header-search">
-                <LuScanSearch className="search-icon" />                     
-                <form onSubmit={handleSubmit}>
-                    <input 
-                        className="search-bar" 
-                        id="search-bar"                    
-                        type="text"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        placeholder="Search books, authors, genres..."
-                    />
-                </form>
-                <LuFilter className="filter-icon" />
+                <Link to="/search" aria-label="Search books">
+                    <LuScanSearch className="search-icon" />  
+                </Link>                   
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="search" className="sr-only"></label>
+                        <input 
+                            className="search-bar" 
+                            id="search-bar"                    
+                            type="text"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            placeholder="Search books, authors, genres..."
+                            aria-label="Search books"
+                        />
+                    </form>
+                <LuFilter className="filter-icon" aria-label="Filter"/>
             </div>
         </header>
     )

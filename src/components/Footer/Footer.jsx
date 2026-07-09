@@ -1,15 +1,16 @@
-import { NavLink } from 'react-router-dom';
 import './Footer.css';
 import { LuCompass, LuHouse, LuSearch } from "react-icons/lu";
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <NavLink 
                 to="/"
                 className={({ isActive }) => 
                     isActive ? "footer-link active" : "footer-link"
                 }
+                aria-label="Home"
             >
                 <LuHouse />
             </NavLink>
@@ -19,6 +20,7 @@ function Footer() {
                 className={({ isActive }) =>
                     isActive ? "footer-link active" : "footer-link"
                 }
+                aria-label="Discover"
             >
                 <LuCompass />
             </NavLink>
@@ -27,10 +29,11 @@ function Footer() {
                 className={({ isActive }) => 
                     isActive ? "footer-link active" : "footer-link" 
                 }
+                aria-label="Search"
             >
                 <LuSearch />
             </NavLink>
-        </div>
+        </footer>
     )
 }
 
