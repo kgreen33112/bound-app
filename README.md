@@ -5,7 +5,7 @@ Bound is a mobile-first designed personal reading tracker built with React. The 
 **WORK IN PROGRESS**
 
 ## Live Demo
-[View Live Demo](https://bound-app-omega.vercel.app/)
+[View Live Demo](https://bound-app-git-main-kgreen33112s-projects.vercel.app/)
 
 ## Screenshots
 
