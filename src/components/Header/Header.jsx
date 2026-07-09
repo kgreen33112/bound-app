@@ -73,7 +73,7 @@ function Header () {
                     <LuScanSearch className="search-icon" />  
                 </Link>                   
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="search" className="sr-only"></label>
+                        <label htmlFor="search-bar" className="sr-only"></label>
                         <input 
                             className="search-bar" 
                             id="search-bar"                    

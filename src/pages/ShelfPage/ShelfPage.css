@@ -47,6 +47,13 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+    .shelf-top-info {
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-sm);
+        gap: var(--space-sm);
+    }
+
     .shelf-title-count {
         font-size: 1.5rem;
     }
@@ -58,6 +65,8 @@
     .shelf-filter-tabs {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         gap: var(--space-sm);
     }
 

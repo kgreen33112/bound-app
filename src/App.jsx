@@ -14,6 +14,7 @@ import GenrePage from './pages/GenrePage/GenrePage.jsx';
 import FeaturedListPage from './pages/FeaturedListPage/FeaturedListPage.jsx';
 import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from "react";
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   const [booksData, setBooksData] = useState(() => {
@@ -84,14 +85,35 @@ function App() {
     localStorage.setItem("shelves", JSON.stringify(shelves));
   }, [shelves]);
 
+  function createShelfId(title) {
+    return title
+      .trim()
+      .toLowerCase()
+      .replaceAll(" ", "-");
+  }
+
   function addShelf(title) {
+    const trimmedTitle = title.trim();
+    const newShelfId = createShelfId(trimmedTitle);
+
+    const duplicate = shelves.some(
+      (shelf) => 
+        shelf.id === newShelfId
+    );
+
+    if (duplicate) {
+      return false;
+    }
+
     const newShelf = {
-        id: title.toLowerCase().replaceAll(" ", "-"),
-        title,
+        id: newShelfId,
+        title: trimmedTitle,
         canDelete: true,
     };
 
     setShelves((prevShelves) => [...prevShelves, newShelf]);
+
+    return true;
   }
 
   function deleteShelf(shelfId) {
@@ -182,6 +204,7 @@ function App() {
             path="/featured/:listId"
             element={<FeaturedListPage books={booksData} />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer />
     </div>

@@ -2,7 +2,9 @@
 .book-stack {
     position: relative;
     width: 5rem;
-    height: 7rem;
+    height: 8rem;
+    top: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .book-stack-cover {

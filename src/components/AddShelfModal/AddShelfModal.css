@@ -27,6 +27,12 @@
     box-shadow: var(--shadow-md);
 }
 
+.character-count {
+    text-align: right;
+    font-size: 0.85rem;
+    color: var(--text);
+}
+
 .modal-actions {
     display: flex;
     justify-content: flex-end;

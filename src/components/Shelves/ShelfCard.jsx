@@ -3,8 +3,10 @@ import Card from "../Card/Card";
 import BookStack from "../Books/BookStack";
 import { LuTrash2 } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 function ShelfCard ({ title, shelfId, canDelete, books, onDelete }) {
+    const [showConfirm, setShowConfirm] = useState(false);
 
     return (
         <Card className="shelf-card">
@@ -17,17 +19,36 @@ function ShelfCard ({ title, shelfId, canDelete, books, onDelete }) {
                 <p>{books.length} books</p>
             </Link>
 
-                {canDelete && (
+                {canDelete && !showConfirm && (
                     <button 
                         type="button"
                         className="delete-shelf-btn"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            onDelete(shelfId);
-                        }}
+                        onClick={() => setShowConfirm(true)}
                     >
                         <LuTrash2 aria-hidden="true" /> Delete
                     </button>
+                )}
+
+                {showConfirm && (
+                    <div className="delete-confirm">
+                        <p className="delete-true">Delete "{title}"?</p>
+
+                        <button 
+                            type="button" 
+                            className="shelf-cancel-btn"
+                            onClick={() => setShowConfirm(false)}
+                        >
+                            Cancel
+                        </button>
+
+                        <button 
+                            type="button"
+                            className="shelf-delete-btn"
+                            onClick={() => onDelete(shelfId)}
+                        >
+                            Delete Shelf
+                        </button> 
+                    </div>
                 )}
             </Card>
     )

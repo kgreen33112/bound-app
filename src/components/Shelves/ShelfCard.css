@@ -37,6 +37,31 @@
     margin-top: var(--space-md);
 }
 
+.delete-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.delete-true {
+    font-weight: 600;
+}
+
+.shelf-cancel-btn {
+    background: var(--clr-background);
+    color: var(--text);
+    border: 1px solid var(--secondary-blue);
+    padding: var(--space-xs);
+    border-radius: var(--radius-md);
+}
+
+.shelf-delete-btn {
+    background: var(--primary-blue);
+    color: white;
+    padding: var(--space-xs);
+    border-radius: var(--radius-md);
+}
+
 /* Tablet */
 @media (min-width: 768px) {
     .shelf-title {
@@ -54,6 +79,10 @@
 }
 
 @media (min-width: 1024px) {
+
+    .shelf-title {
+        text-align: center;
+    }
     .shelf-card p {
         font-size: 1.2rem;
     }

@@ -1,6 +1,7 @@
 import './FeaturedListPage.css';
 import featuredLists from "../../assets/data/featuredLists";
 import StarRating from "../../components/StarRating/StarRating";
+import NotFound from "../../pages/NotFound/NotFound";
 import { useParams, Link } from "react-router-dom";
 
 
@@ -10,7 +11,7 @@ function FeaturedListPage({ books }) {
     const list = featuredLists.find((list) => list.id === listId);
 
     if (!list) {
-        return <p>Featured list not found</p>;
+        return <NotFound />
     }
 
     const listBooks = list.bookIds.map((id) => books[id]);

@@ -1,0 +1,26 @@
+/* Mobile */
+.not-found-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+    gap: var(--space-sm);
+}
+
+.not-found-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+}
+
+.not-found-text {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Tablet */
+.not-found-icon {
+    font-size: 5rem;
+}
+
+.not-found-text {
+    font-size: 1.75rem;
+}

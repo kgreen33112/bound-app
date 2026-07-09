@@ -3,6 +3,7 @@ import StarRating from "../../components/StarRating/StarRating";
 import { LuHexagon } from "react-icons/lu";
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
+import NotFound from "../NotFound/NotFound";
 
 function ShelfPage({ books }) {
     const { shelfId } = useParams();
@@ -16,6 +17,10 @@ function ShelfPage({ books }) {
     };
 
     const shelfTitle = shelfTitles[shelfId];
+
+    if (!shelfTitle) {
+        return <NotFound />
+    }
 
     const shelfBooks = Object.values(books).filter(
         (book) => book.status === shelfId

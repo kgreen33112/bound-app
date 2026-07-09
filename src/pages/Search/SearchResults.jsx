@@ -7,10 +7,17 @@ function SearchResults({ books }) {
     const [searchParams] = useSearchParams();
 
     const query = searchParams.get("q") || "";
+    const normalizedQuery = query.toLowerCase().trim();
 
-    const searchResults = Object.values(books).filter((book) =>
-        book.title.toLowerCase().includes(query.toLowerCase())
+    const searchResults = Object.values(books).filter((book) => {
+        const titleMatch = book.title.toLowerCase().includes(normalizedQuery);
+        const authorMatch = book.author.toLowerCase().includes(normalizedQuery);
+        const genreMatch = book.genres?.some((genre) => 
+        genre.toLowerCase().includes(normalizedQuery)
     );
+
+    return titleMatch || authorMatch || genreMatch;
+});
 
     return (
         <main className="main-content">

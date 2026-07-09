@@ -20,6 +20,7 @@
     padding: var(--space-xs);
     font-size: 0.75rem;
     margin-bottom: var(--space-md);
+    margin-top: var(--space-md);
 }
 
 .btn-icon {

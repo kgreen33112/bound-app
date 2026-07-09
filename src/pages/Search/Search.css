@@ -1,6 +1,7 @@
 /* Mobile */
 .search-results {
     display: flex;
+    flex-direction: column;
     padding: var(--space-md);
     box-shadow: var(--shadow-md);
     border-radius: var(--radius-md);
@@ -10,7 +11,7 @@
 .search-result {
     padding: var(--space-md);
     gap: 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .genre-feature {
@@ -31,6 +32,13 @@
     font-size: 0.75rem;
     align-items: center;
     padding: var(--space-sm);
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-sm);
+    gap: var(--space-sm);
 }
 
 /* Tablet */

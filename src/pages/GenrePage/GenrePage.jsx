@@ -2,6 +2,7 @@ import './GenrePage.css';
 import Card from '../../components/Card/Card';
 import StarRating from '../../components/StarRating/StarRating';
 import { useParams, Link } from "react-router-dom";
+import NotFound from '../NotFound/NotFound';
 
 function GenrePage ({ books }) {
     const { genreId } = useParams();
@@ -11,12 +12,15 @@ function GenrePage ({ books }) {
         (genre) => genre.toLowerCase() === genreId.toLowerCase()
     )
 );
+    if (!genreBooks) {
+        return <NotFound />
+    }
 
     return (
         <main className="main-content">
             <h1 className="genre-page-title">{genreId}</h1>
                 {genreBooks.map((book) => (
-                    <Card className="genre-page-card">
+                    <Card className="genre-page-card" key={book.id}>
                         <Link key={book.id} to={`/books/${book.id}`}>
                             <img
                                 className="genre-book-cover"

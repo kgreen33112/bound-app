@@ -3,6 +3,7 @@ import { books } from '../../assets/data/books';
 import fallbackCover2 from '../../assets/images/fallbackCover2.png';
 import Card from '../../components/Card/Card';
 import StarRating from "../../components/StarRating/StarRating";
+import NotFound from "../../pages/NotFound/NotFound";
 import { useParams } from "react-router-dom";
 
 function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
@@ -10,7 +11,7 @@ function BookDetails({ books, shelves, updateBookStatus, updateBookRating }) {
     const book = books[bookId];
 
     if (!book) {
-        return <p>Book not found.</p>
+        return <NotFound />;
     }
     
     return (
