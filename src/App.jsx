@@ -18,7 +18,7 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   const [booksData, setBooksData] = useState(() => {
-    const savedBooks = localStorage.getItem("booksData");
+    const savedBooks = JSON.parse(localStorage.getItem("booksData"));
 
     return savedBooks ? JSON.parse(savedBooks) : initialBooks;
   });
